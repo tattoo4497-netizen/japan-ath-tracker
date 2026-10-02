@@ -13,12 +13,11 @@ def get_tradingview_ath_stocks():
     payload = {
         "filter": [
             {"left": "High.All", "operation": "equal", "right": "high"}, # 当日高値 ＝ 上場来高値
-            {"left": "type", "operation": "equal", "right": "stock"},    # 個別株のみ（ETFや基金等を除外）
-            {"left": "submarket", "operation": "nequal", "right": "etf"} # ETFサブマーケットを除外
+            {"left": "type", "operation": "equal", "right": "stock"}     # 個別株のみ
         ],
         "options": {"lang": "ja"},
-        "symbols": {"query": {"types": []}, "tickers": []},
-        "columns": ["name", "description", "close", "change", "volume", "sector"],
+        "symbols": {"query": {"types": ["stock"]}, "tickers": []}, # 明示的にstockのみ指定
+        "columns": ["name", "description", "close", "change", "volume", "sector", "type"],
         "sort": {"sortBy": "change", "sortOrder": "desc"},
         "range": [0, 300]
     }
@@ -38,17 +37,29 @@ def get_tradingview_ath_stocks():
         code = item["s"].replace("TSE:", "") # 銘柄コード
         cols = item["d"]
         
+        # セクターやタイプがETF/REIT/Fund/基金等のものをPython側でも二重に除外
+        sector_name = cols[5] or ""
+        item_type = cols[6] or ""
+        
+        if item_type != "stock" or "ETF" in sector_name or "Fund" in sector_name:
+            continue
+            
+        # 銘柄名に「ETF」や「iシェアーズ」などが含まれる場合も除外
+        name = cols[1] or code
+        if "ETF" in name or "iシェアーズ" in name or "上場投信" in name:
+            continue
+
         # 前日比(cols[3])がNoneの場合は0.0にする安全処理
         raw_change = cols[3]
         change_val = round(raw_change, 2) if raw_change is not None else 0.0
         
         stocks.append({
             "code": code,
-            "name": cols[1] or code, # 銘柄名
-            "price": cols[2] or 0,  # 終値
-            "change": change_val,  # 前日比(%)
-            "volume": cols[4] or 0, # 出来高
-            "sector": cols[5] or "その他"
+            "name": name,
+            "price": cols[2] or 0,   # 終値
+            "change": change_val,   # 前日比(%)
+            "volume": cols[4] or 0,  # 出来高
+            "sector": sector_name or "その他"
         })
     return stocks
 
@@ -56,32 +67,19 @@ def update_ath_history(today_stocks):
     """過去のデータと照合して連続更新日数を計算"""
     today_str = datetime.now().strftime("%Y-%m-%d")
     
-    # 既存データの読み込み
-    if os.path.exists(DATA_FILE):
-        with open(DATA_FILE, "r", encoding="utf-8") as f:
-            try:
-                history = json.load(f)
-            except Exception:
-                history = {"last_updated": "", "stocks": {}}
-    else:
-        history = {"last_updated": "", "stocks": {}}
-        
-    prev_stocks = history.get("stocks", {})
+    today_codes = {s["code"] for s in today_stocks}
     new_stocks = {}
     
     for stock in today_stocks:
         code = stock["code"]
-        # 前回もATHリストに存在していれば連続日数+1、新規なら1日目
-        prev_consecutive = prev_stocks.get(code, {}).get("consecutive_days", 0)
-        consecutive_days = prev_consecutive + 1
-        
+        # 今回取得した個別株のみを新規登録・更新
         new_stocks[code] = {
             "name": stock["name"],
             "price": stock["price"],
             "change": stock["change"],
             "volume": stock["volume"],
             "sector": stock["sector"],
-            "consecutive_days": consecutive_days,
+            "consecutive_days": 1, # 本日時点で連続1日目
             "last_date": today_str
         }
         
@@ -93,7 +91,7 @@ def update_ath_history(today_stocks):
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(result_data, f, ensure_ascii=False, indent=2)
         
-    print(f"[{today_str}] 更新完了: {len(new_stocks)} 銘柄がATH更新")
+    print(f"[{today_str}] 更新完了: {len(new_stocks)} 銘柄がATH更新（個別株のみ）")
     return result_data
 
 if __name__ == "__main__":
