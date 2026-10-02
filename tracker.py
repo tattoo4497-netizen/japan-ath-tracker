@@ -9,10 +9,12 @@ TV_SCANNER_URL = "https://scanner.tradingview.com/japan/scan"
 DATA_FILE = "ath_data.json"
 
 def get_tradingview_ath_stocks():
-    """TradingViewから上場来高値（ATH）更新銘柄を取得"""
+    """TradingViewから上場来高値（ATH）更新銘柄（個別株のみ）を取得"""
     payload = {
         "filter": [
-            {"left": "High.All", "operation": "equal", "right": "high"} # 当日高値 ＝ 上場来高値
+            {"left": "High.All", "operation": "equal", "right": "high"}, # 当日高値 ＝ 上場来高値
+            {"left": "type", "operation": "equal", "right": "stock"},    # 個別株のみ（ETFや基金等を除外）
+            {"left": "submarket", "operation": "nequal", "right": "etf"} # ETFサブマーケットを除外
         ],
         "options": {"lang": "ja"},
         "symbols": {"query": {"types": []}, "tickers": []},
