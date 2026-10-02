@@ -1,4 +1,455 @@
 {
-  "last_updated": "未更新",
-  "stocks": {}
+  "last_updated": "2026-10-02",
+  "stocks": {
+    "NAG:6136": {
+      "name": "オーエスジー",
+      "price": 3600,
+      "change": 116.61,
+      "volume": 100,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "446A": {
+      "name": "ノースサンド",
+      "price": 2572,
+      "change": 11.15,
+      "volume": 1180500,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "2962": {
+      "name": "テクニスコ",
+      "price": 2732,
+      "change": 9.5,
+      "volume": 876700,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "6570": {
+      "name": "共和コーポレーション",
+      "price": 4395,
+      "change": 7.59,
+      "volume": 127000,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "7384": {
+      "name": "プロクレアホールディングス",
+      "price": 5720,
+      "change": 5.93,
+      "volume": 497900,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "3143": {
+      "name": "オーウイル",
+      "price": 1096,
+      "change": 5.79,
+      "volume": 43600,
+      "sector": "Health Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "456A": {
+      "name": "ＨＵＭＡＮ　ＭＡＤＥ",
+      "price": 2170,
+      "change": 5.34,
+      "volume": 1972400,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "5243": {
+      "name": "ＮＯＴＥ",
+      "price": 4100,
+      "change": 4.19,
+      "volume": 991300,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "9632": {
+      "name": "スバル興業",
+      "price": 5050,
+      "change": 3.7,
+      "volume": 549300,
+      "sector": "Transportation",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "6857": {
+      "name": "アドバンテスト",
+      "price": 38630,
+      "change": 2.71,
+      "volume": 16856700,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "6890": {
+      "name": "フェローテック",
+      "price": 11540,
+      "change": 2.58,
+      "volume": 1591300,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "8387": {
+      "name": "四国銀行",
+      "price": 4685,
+      "change": 1.96,
+      "volume": 421200,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "2892": {
+      "name": "日本食品化工",
+      "price": 4900,
+      "change": 1.87,
+      "volume": 7700,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "3105": {
+      "name": "日清紡ホールディングス",
+      "price": 2698.5,
+      "change": 1.68,
+      "volume": 819500,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "6785": {
+      "name": "鈴木",
+      "price": 3460,
+      "change": 1.62,
+      "volume": 167800,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "6638": {
+      "name": "ミマキエンジニアリング",
+      "price": 2269,
+      "change": 1.57,
+      "volume": 166900,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "8361": {
+      "name": "大垣共立銀行",
+      "price": 1810,
+      "change": 1.29,
+      "volume": 994700,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "4203": {
+      "name": "住友ベークライト",
+      "price": 8581,
+      "change": 1.0,
+      "volume": 578800,
+      "sector": "Health Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "8344": {
+      "name": "山形銀行",
+      "price": 5600,
+      "change": 0.72,
+      "volume": 314500,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "NAG:3504": {
+      "name": "丸八ホールディングス",
+      "price": 1438,
+      "change": 0.63,
+      "volume": 8600,
+      "sector": "Consumer Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "6668": {
+      "name": "アドテック　プラズマ　テクノロジー",
+      "price": 4845,
+      "change": 0.62,
+      "volume": 71600,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "8343": {
+      "name": "秋田銀行",
+      "price": 2033,
+      "change": 0.49,
+      "volume": 2345200,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "643A": {
+      "name": "データセンターインフラ　日本株（ネットリターン）ＥＴＮ",
+      "price": 11345,
+      "change": 0.44,
+      "volume": 12194,
+      "sector": "Miscellaneous",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "8395": {
+      "name": "佐賀銀行",
+      "price": 6970,
+      "change": 0.43,
+      "volume": 72600,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "6676": {
+      "name": "バッファロー",
+      "price": 3605,
+      "change": 0.42,
+      "volume": 56500,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "6337": {
+      "name": "テセック",
+      "price": 3810,
+      "change": 0.4,
+      "volume": 55300,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "6742": {
+      "name": "京三製作所",
+      "price": 1132,
+      "change": 0.35,
+      "volume": 190400,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "9824": {
+      "name": "泉州電業",
+      "price": 8190,
+      "change": 0.24,
+      "volume": 62600,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "7727": {
+      "name": "オーバル",
+      "price": 950,
+      "change": 0.21,
+      "volume": 119700,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "7826": {
+      "name": "フルヤ金属",
+      "price": 11840,
+      "change": 0.17,
+      "volume": 451000,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "5985": {
+      "name": "サンコール",
+      "price": 2484,
+      "change": 0.16,
+      "volume": 996200,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "507A": {
+      "name": "Ｐ−デジタルナレッジ",
+      "price": 2156,
+      "change": 0,
+      "volume": 1600,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "633A": {
+      "name": "グローバルＸ　韓国半導体・トップ１０　ＥＴＦ",
+      "price": 1091,
+      "change": 0,
+      "volume": 46964,
+      "sector": "Miscellaneous",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "271A": {
+      "name": "Ｐ−アクセリア",
+      "price": 1500,
+      "change": 0,
+      "volume": 400,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "5840": {
+      "name": "Ｐ−日本総険",
+      "price": 505,
+      "change": 0,
+      "volume": 1200,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "7322": {
+      "name": "三十三フィナンシャルグループ",
+      "price": 2255,
+      "change": -0.09,
+      "volume": 472600,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "8537": {
+      "name": "大光銀行",
+      "price": 3415,
+      "change": -0.44,
+      "volume": 26200,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "6912": {
+      "name": "菊水ホールディングス",
+      "price": 2824,
+      "change": -0.53,
+      "volume": 15700,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "2250": {
+      "name": "Ｉシェアーズ　ＭＳＣＩ　ジャパン気候変動アクション　ＥＴＦ",
+      "price": 377.3,
+      "change": -0.71,
+      "volume": 2880,
+      "sector": "Miscellaneous",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "NAG:7485": {
+      "name": "岡谷鋼機",
+      "price": 5210,
+      "change": -0.76,
+      "volume": 10700,
+      "sector": "Non-Energy Minerals",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "8388": {
+      "name": "阿波銀行",
+      "price": 2202,
+      "change": -1.43,
+      "volume": 827800,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "7480": {
+      "name": "スズデン",
+      "price": 3760,
+      "change": -2.59,
+      "volume": 92800,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "640A": {
+      "name": "ＡＳＮＯＶＡ　ＣＯＭＰＡＮＩＥＳ",
+      "price": 413,
+      "change": -6.14,
+      "volume": 493100,
+      "sector": "その他",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "SAPSE:628A": {
+      "name": "Ｓ−カド―",
+      "price": 2680,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Consumer Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "NAG:4707": {
+      "name": "キタック",
+      "price": 350,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "638A": {
+      "name": "Ｐ−ハイネス",
+      "price": 3040,
+      "change": 0.0,
+      "volume": 66000,
+      "sector": "その他",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "FSE:628A": {
+      "name": "Ｆ−カドー",
+      "price": 2680,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Consumer Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "NAG:3461": {
+      "name": "パルマ",
+      "price": 644,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "628A": {
+      "name": "Ｐ−カドー",
+      "price": 2680,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Consumer Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    },
+    "637A": {
+      "name": "Ｐ−オーリーズ",
+      "price": 145,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-02"
+    }
+  }
 }
