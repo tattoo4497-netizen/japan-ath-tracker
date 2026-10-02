@@ -35,12 +35,17 @@ def get_tradingview_ath_stocks():
     for item in data.get("data", []):
         code = item["s"].replace("TSE:", "") # 銘柄コード
         cols = item["d"]
+        
+        # 前日比(cols[3])がNoneの場合は0.0にする安全処理
+        raw_change = cols[3]
+        change_val = round(raw_change, 2) if raw_change is not None else 0.0
+        
         stocks.append({
             "code": code,
-            "name": cols[1], # 銘柄名
-            "price": cols[2], # 終値
-            "change": round(cols[3], 2), # 前日比(%)
-            "volume": cols[4], # 出来高
+            "name": cols[1] or code, # 銘柄名
+            "price": cols[2] or 0,  # 終値
+            "change": change_val,  # 前日比(%)
+            "volume": cols[4] or 0, # 出来高
             "sector": cols[5] or "その他"
         })
     return stocks
@@ -52,7 +57,10 @@ def update_ath_history(today_stocks):
     # 既存データの読み込み
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r", encoding="utf-8") as f:
-            history = json.load(f)
+            try:
+                history = json.load(f)
+            except Exception:
+                history = {"last_updated": "", "stocks": {}}
     else:
         history = {"last_updated": "", "stocks": {}}
         
