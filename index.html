@@ -2,61 +2,143 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>日本株 上場来高値(ATH) 連続更新チェッカー</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本株 上場来高値(ATH) 連続更新トラッカー</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #131722; color: #d1d4dc; margin: 20px; }
-        h1 { color: #f0b90b; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #1e222d; border-radius: 8px; overflow: hidden; }
-        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #2a2e39; }
-        th { background: #2a2e39; color: #787b86; }
-        .badge { background: #2962ff; color: #fff; padding: 4px 8px; border-radius: 4px; font-weight: bold; }
-        .up { color: #089981; font-weight: bold; }
-        .down { color: #f23645; font-weight: bold; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #12141d;
+            color: #e1e3ea;
+            margin: 0;
+            padding: 15px;
+        }
+        h1 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .last-updated {
+            font-size: 0.8rem;
+            color: #8a8d9b;
+            margin-bottom: 15px;
+        }
+        .table-container {
+            overflow-x: auto;
+            background: #1a1d29;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #2a2e3d;
+            white-space: nowrap;
+        }
+        th {
+            background-color: #222634;
+            color: #9da1b0;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: #252a3a;
+        }
+        .badge {
+            display: inline-block;
+            background: #2563eb;
+            color: #fff;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+        .up { color: #22c55e; }
+        .down { color: #ef4444; }
     </style>
 </head>
 <body>
-    <h1>📈 日本株 上場来高値(ATH) 連続更新トラッカー</h1>
-    <p id="updated"></p>
 
-    <table>
-        <thead>
-            <tr>
-                <th>コード</th>
-                <th>銘柄名</th>
-                <th>連続更新日数</th>
-                <th>株価</th>
-                <th>前日比</th>
-                <th>セクター</th>
-            </tr>
-        </thead>
-        <tbody id="stock-list"></tbody>
-    </table>
+    <h1>📈 日本株 上場来高値(ATH) 連続更新トラッカー</h1>
+    <div class="last-updated" id="lastUpdated">最終更新日: 読み込み中...</div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>コード</th>
+                    <th>銘柄名</th>
+                    <th>連続更新日数</th>
+                    <th>株価</th>
+                    <th>前日比</th>
+                    <th>セクター</th>
+                </tr>
+            </thead>
+            <tbody id="stockTableBody">
+                <tr>
+                    <td colspan="6" style="text-align:center;">データを読み込んでいます...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <script>
-        async function loadData() {
+        async function loadATHData() {
             try {
-                const res = await fetch('ath_data.json');
-                const data = await res.json();
-                document.getElementById('updated').innerText = `最終更新日: ${data.last_updated}`;
+                // キャッシュを回避するためにタイムスタンプを付与
+                const response = await fetch('ath_data.json?v=' + new Date().getTime());
+                if (!response.ok) throw new Error("データの取得に失敗しました");
                 
-                const list = document.getElementById('stock-list');
-                const sorted = Object.entries(data.stocks).sort((a, b) => b[1].consecutive_days - a[1].consecutive_days);
+                const data = await response.json();
                 
-                list.innerHTML = sorted.map(([code, item]) => `
-                    <tr>
-                        <td><b>${code}</b></td>
-                        <td>${item.name}</td>
-                        <td><span class="badge">${item.consecutive_days}日連続 🔥</span></td>
-                        <td>¥${item.price.toLocaleString()}</td>
-                        <td class="${item.change >= 0 ? 'up' : 'down'}">${item.change > 0 ? '+' : ''}${item.change}%</td>
-                        <td>${item.sector}</td>
-                    </tr>
-                `).join('');
-            } catch (e) {
-                console.error("データ読み込みエラー:", e);
+                document.getElementById('lastUpdated').textContent = `最終更新日: ${data.last_updated}`;
+                
+                const tbody = document.getElementById('stockTableBody');
+                tbody.innerHTML = '';
+                
+                const stocks = Object.entries(data.stocks).map(([code, info]) => ({
+                    code,
+                    ...info
+                }));
+                
+                // 連続日数(降順) ➔ 前日比(降順) でソート
+                stocks.sort((a, b) => b.consecutive_days - a.consecutive_days || b.change - a.change);
+
+                if (stocks.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;">本日のATH更新銘柄はありません</td></tr>';
+                    return;
+                }
+
+                stocks.forEach(stock => {
+                    const tr = document.createElement('tr');
+                    
+                    const changeClass = stock.change > 0 ? 'up' : (stock.change < 0 ? 'down' : '');
+                    const changeSign = stock.change > 0 ? '+' : '';
+                    
+                    tr.innerHTML = `
+                        <td><b>${stock.code}</b></td>
+                        <td>${stock.name}</td>
+                        <td><span class="badge">${stock.consecutive_days}日連続 🔥</span></td>
+                        <td>¥${stock.price.toLocaleString()}</td>
+                        <td class="${changeClass}">${changeSign}${stock.change}%</td>
+                        <td>${stock.sector}</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+
+            } catch (error) {
+                console.error(error);
+                document.getElementById('stockTableBody').innerHTML = '<tr><td colspan="6" style="text-align:center; color:#ef4444;">データの読み込みエラーが発生しました</td></tr>';
             }
         }
-        loadData();
+
+        loadATHData();
     </script>
 </body>
 </html>
