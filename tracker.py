@@ -3,17 +3,16 @@ import json
 import requests
 from datetime import datetime
 
-# TradingViewのScanner APIエンドポイント（日本株上場来高値）
 TV_SCANNER_URL = "https://scanner.tradingview.com/japan/scan"
-
 DATA_FILE = "ath_data.json"
+HISTORY_DIR = "history"
 
 def get_tradingview_ath_stocks():
-    """TradingViewから上場来高値（ATH）更新銘柄（個別株のみ）を取得"""
+    """TradingViewから上場来高値（ATH）更新銘柄を取得（個別株のみ）"""
     payload = {
         "filter": [
-            {"left": "High.All", "operation": "equal", "right": "high"}, # 当日高値 ＝ 上場来高値
-            {"left": "type", "operation": "equal", "right": "stock"}     # 個別株のみ
+            {"left": "High.All", "operation": "equal", "right": "high"},
+            {"left": "type", "operation": "equal", "right": "stock"}
         ],
         "options": {"lang": "ja"},
         "symbols": {"query": {"types": ["stock"]}, "tickers": []},
@@ -22,9 +21,7 @@ def get_tradingview_ath_stocks():
         "range": [0, 300]
     }
     
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-    }
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
     
     response = requests.post(TV_SCANNER_URL, json=payload, headers=headers)
     if response.status_code != 200:
@@ -34,40 +31,40 @@ def get_tradingview_ath_stocks():
     data = response.json()
     stocks = []
     for item in data.get("data", []):
-        code = item["s"].replace("TSE:", "") # 銘柄コード
+        code = item["s"].replace("TSE:", "")
         cols = item["d"]
         
-        # セクターやタイプがETF/REIT/Fund/基金等のものをPython側でも二重に除外
         sector_name = cols[5] or ""
         item_type = cols[6] or ""
         
         if item_type != "stock" or "ETF" in sector_name or "Fund" in sector_name:
             continue
             
-        # 銘柄名に「ETF」や「iシェアーズ」などが含まれる場合も除外
         name = cols[1] or code
         if "ETF" in name or "iシェアーズ" in name or "上場投信" in name:
             continue
 
-        # 前日比(cols[3])がNoneの場合は0.0にする安全処理
         raw_change = cols[3]
         change_val = round(raw_change, 2) if raw_change is not None else 0.0
         
         stocks.append({
             "code": code,
             "name": name,
-            "price": cols[2] or 0,   # 終値
-            "change": change_val,   # 前日比(%)
-            "volume": cols[4] or 0,  # 出来高
+            "price": cols[2] or 0,
+            "change": change_val,
+            "volume": cols[4] or 0,
             "sector": sector_name or "その他"
         })
     return stocks
 
 def update_ath_history(today_stocks):
-    """過去のデータと照合して連続更新日数を正確に計算（同日内の重複カウントを防止）"""
+    """過去のデータと照合して連続日数を計算し、日別ログファイルを作成"""
     today_str = datetime.now().strftime("%Y-%m-%d")
     
-    # 既存の過去データを読み込む
+    # 履歴ディレクトリの作成
+    os.makedirs(HISTORY_DIR, exist_ok=True)
+    
+    # 既存データの読み込み
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r", encoding="utf-8") as f:
             try:
@@ -86,11 +83,9 @@ def update_ath_history(today_stocks):
         prev_data = prev_stocks.get(code, {})
         prev_consecutive = prev_data.get("consecutive_days", 0)
         
-        # 同一日に複数回実行された場合は日数を増加させず維持する
         if last_updated_date == today_str:
             consecutive_days = prev_consecutive if prev_consecutive > 0 else 1
         else:
-            # 日付が変わった初回実行時のみ連続日数を+1加算
             consecutive_days = prev_consecutive + 1 if prev_consecutive > 0 else 1
         
         new_stocks[code] = {
@@ -108,10 +103,16 @@ def update_ath_history(today_stocks):
         "stocks": new_stocks
     }
     
+    # 最新データの保存
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(result_data, f, ensure_ascii=False, indent=2)
         
-    print(f"[{today_str}] 更新完了: {len(new_stocks)} 銘柄がATH更新")
+    # 日別アーカイブファイル（例: history/2026-10-02.json）の保存
+    daily_file = os.path.join(HISTORY_DIR, f"{today_str}.json")
+    with open(daily_file, "w", encoding="utf-8") as f:
+        json.dump(result_data, f, ensure_ascii=False, indent=2)
+        
+    print(f"[{today_str}] 更新完了: {len(new_stocks)} 銘柄がATH更新 (履歴ファイルを保存しました)")
     return result_data
 
 if __name__ == "__main__":
