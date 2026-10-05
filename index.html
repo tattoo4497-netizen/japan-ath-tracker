@@ -20,10 +20,32 @@
             align-items: center;
             gap: 8px;
         }
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
         .last-updated {
             font-size: 0.8rem;
             color: #8a8d9b;
-            margin-bottom: 15px;
+        }
+        .refresh-btn {
+            background-color: #2563eb;
+            color: #ffffff;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: background-color 0.2s;
+        }
+        .refresh-btn:active {
+            background-color: #1d4ed8;
         }
         .table-container {
             overflow-x: auto;
@@ -66,7 +88,10 @@
 <body>
 
     <h1>📈 日本株 上場来高値(ATH) 連続更新トラッカー</h1>
-    <div class="last-updated" id="lastUpdated">最終更新日: 読み込み中...</div>
+    <div class="header-bar">
+        <div class="last-updated" id="lastUpdated">最終更新日: 読み込み中...</div>
+        <button class="refresh-btn" id="refreshBtn" onclick="loadATHData(true)">🔄 更新</button>
+    </div>
 
     <div class="table-container">
         <table>
@@ -89,9 +114,15 @@
     </div>
 
     <script>
-        async function loadATHData() {
+        async function loadATHData(isManual = false) {
+            const btn = document.getElementById('refreshBtn');
+            if (isManual) {
+                btn.textContent = '⏳ 更新中...';
+                btn.disabled = true;
+            }
+
             try {
-                // キャッシュを回避するためにタイムスタンプを付与
+                // キャッシュを強制回避して最新データ（ath_data.json）を取得
                 const response = await fetch('ath_data.json?v=' + new Date().getTime());
                 if (!response.ok) throw new Error("データの取得に失敗しました");
                 
@@ -135,6 +166,13 @@
             } catch (error) {
                 console.error(error);
                 document.getElementById('stockTableBody').innerHTML = '<tr><td colspan="6" style="text-align:center; color:#ef4444;">データの読み込みエラーが発生しました</td></tr>';
+            } finally {
+                if (isManual) {
+                    setTimeout(() => {
+                        btn.textContent = '🔄 更新';
+                        btn.disabled = false;
+                    }, 500);
+                }
             }
         }
 
