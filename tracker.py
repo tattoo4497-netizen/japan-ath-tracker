@@ -16,7 +16,7 @@ def get_tradingview_ath_stocks():
             {"left": "type", "operation": "equal", "right": "stock"}     # 個別株のみ
         ],
         "options": {"lang": "ja"},
-        "symbols": {"query": {"types": ["stock"]}, "tickers": []}, # 明示的にstockのみ指定
+        "symbols": {"query": {"types": ["stock"]}, "tickers": []},
         "columns": ["name", "description", "close", "change", "volume", "sector", "type"],
         "sort": {"sortBy": "change", "sortOrder": "desc"},
         "range": [0, 300]
@@ -64,22 +64,37 @@ def get_tradingview_ath_stocks():
     return stocks
 
 def update_ath_history(today_stocks):
-    """過去のデータと照合して連続更新日数を計算"""
+    """過去のデータと照合して連続更新日数を正確に計算・引き継ぎ"""
     today_str = datetime.now().strftime("%Y-%m-%d")
     
-    today_codes = {s["code"] for s in today_stocks}
+    # 既存の過去データを読み込む
+    if os.path.exists(DATA_FILE):
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            try:
+                history = json.load(f)
+            except Exception:
+                history = {"last_updated": "", "stocks": {}}
+    else:
+        history = {"last_updated": "", "stocks": {}}
+        
+    prev_stocks = history.get("stocks", {})
     new_stocks = {}
     
     for stock in today_stocks:
         code = stock["code"]
-        # 今回取得した個別株のみを新規登録・更新
+        
+        # 前回もATHリストに存在していた場合は連続日数+1、それ以外は1日目
+        prev_data = prev_stocks.get(code, {})
+        prev_consecutive = prev_data.get("consecutive_days", 0)
+        consecutive_days = prev_consecutive + 1
+        
         new_stocks[code] = {
             "name": stock["name"],
             "price": stock["price"],
             "change": stock["change"],
             "volume": stock["volume"],
             "sector": stock["sector"],
-            "consecutive_days": 1, # 本日時点で連続1日目
+            "consecutive_days": consecutive_days, # 過去の日数を引き継いで更新
             "last_date": today_str
         }
         
@@ -91,7 +106,7 @@ def update_ath_history(today_stocks):
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(result_data, f, ensure_ascii=False, indent=2)
         
-    print(f"[{today_str}] 更新完了: {len(new_stocks)} 銘柄がATH更新（個別株のみ）")
+    print(f"[{today_str}] 更新完了: {len(new_stocks)} 銘柄がATH更新（連続日数計算適用）")
     return result_data
 
 if __name__ == "__main__":
