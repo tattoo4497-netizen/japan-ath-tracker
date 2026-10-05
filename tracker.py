@@ -64,7 +64,7 @@ def get_tradingview_ath_stocks():
     return stocks
 
 def update_ath_history(today_stocks):
-    """過去のデータと照合して連続更新日数を正確に計算・引き継ぎ"""
+    """過去のデータと照合して連続更新日数を正確に計算（同日内の重複カウントを防止）"""
     today_str = datetime.now().strftime("%Y-%m-%d")
     
     # 既存の過去データを読み込む
@@ -77,16 +77,21 @@ def update_ath_history(today_stocks):
     else:
         history = {"last_updated": "", "stocks": {}}
         
+    last_updated_date = history.get("last_updated", "")
     prev_stocks = history.get("stocks", {})
     new_stocks = {}
     
     for stock in today_stocks:
         code = stock["code"]
-        
-        # 前回もATHリストに存在していた場合は連続日数+1、それ以外は1日目
         prev_data = prev_stocks.get(code, {})
         prev_consecutive = prev_data.get("consecutive_days", 0)
-        consecutive_days = prev_consecutive + 1
+        
+        # 同一日に複数回実行された場合は日数を増加させず維持する
+        if last_updated_date == today_str:
+            consecutive_days = prev_consecutive if prev_consecutive > 0 else 1
+        else:
+            # 日付が変わった初回実行時のみ連続日数を+1加算
+            consecutive_days = prev_consecutive + 1 if prev_consecutive > 0 else 1
         
         new_stocks[code] = {
             "name": stock["name"],
@@ -94,7 +99,7 @@ def update_ath_history(today_stocks):
             "change": stock["change"],
             "volume": stock["volume"],
             "sector": stock["sector"],
-            "consecutive_days": consecutive_days, # 過去の日数を引き継いで更新
+            "consecutive_days": consecutive_days,
             "last_date": today_str
         }
         
@@ -106,7 +111,7 @@ def update_ath_history(today_stocks):
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(result_data, f, ensure_ascii=False, indent=2)
         
-    print(f"[{today_str}] 更新完了: {len(new_stocks)} 銘柄がATH更新（連続日数計算適用）")
+    print(f"[{today_str}] 更新完了: {len(new_stocks)} 銘柄がATH更新")
     return result_data
 
 if __name__ == "__main__":
