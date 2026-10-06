@@ -1,5 +1,6 @@
 {
   "last_updated": "2026-10-06",
+  "last_updated_time": "19:19",
   "stocks": {
     "NAG:9076": {
       "name": "セイノーホールディングス",
@@ -541,15 +542,6 @@
       "consecutive_days": 1,
       "last_date": "2026-10-06"
     },
-    "271A": {
-      "name": "Ｐ−アクセリア",
-      "price": 1500,
-      "change": 0,
-      "volume": 400,
-      "sector": "Technology Services",
-      "consecutive_days": 3,
-      "last_date": "2026-10-06"
-    },
     "5840": {
       "name": "Ｐ−日本総険",
       "price": 505,
@@ -559,21 +551,30 @@
       "consecutive_days": 3,
       "last_date": "2026-10-06"
     },
-    "5301": {
-      "name": "東海カーボン",
-      "price": 2380,
-      "change": 0,
-      "volume": 1438000,
-      "sector": "Producer Manufacturing",
-      "consecutive_days": 3,
-      "last_date": "2026-10-06"
-    },
     "507A": {
       "name": "Ｐ−デジタルナレッジ",
       "price": 2156,
       "change": 0,
       "volume": 1600,
       "sector": "Technology Services",
+      "consecutive_days": 3,
+      "last_date": "2026-10-06"
+    },
+    "271A": {
+      "name": "Ｐ−アクセリア",
+      "price": 1500,
+      "change": 0,
+      "volume": 400,
+      "sector": "Technology Services",
+      "consecutive_days": 3,
+      "last_date": "2026-10-06"
+    },
+    "5301": {
+      "name": "東海カーボン",
+      "price": 2380,
+      "change": 0,
+      "volume": 1438000,
+      "sector": "Producer Manufacturing",
       "consecutive_days": 3,
       "last_date": "2026-10-06"
     },
@@ -595,8 +596,26 @@
       "consecutive_days": 3,
       "last_date": "2026-10-06"
     },
+    "638A": {
+      "name": "Ｐ−ハイネス",
+      "price": 3040,
+      "change": 0.0,
+      "volume": 66000,
+      "sector": "その他",
+      "consecutive_days": 3,
+      "last_date": "2026-10-06"
+    },
     "628A": {
       "name": "Ｐ−カドー",
+      "price": 2680,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Consumer Durables",
+      "consecutive_days": 3,
+      "last_date": "2026-10-06"
+    },
+    "SAPSE:628A": {
+      "name": "Ｓ−カド―",
       "price": 2680,
       "change": 0.0,
       "volume": 100,
@@ -613,30 +632,12 @@
       "consecutive_days": 3,
       "last_date": "2026-10-06"
     },
-    "SAPSE:628A": {
-      "name": "Ｓ−カド―",
-      "price": 2680,
-      "change": 0.0,
-      "volume": 100,
-      "sector": "Consumer Durables",
-      "consecutive_days": 3,
-      "last_date": "2026-10-06"
-    },
     "637A": {
       "name": "Ｐ−オーリーズ",
       "price": 145,
       "change": 0.0,
       "volume": 100,
       "sector": "Commercial Services",
-      "consecutive_days": 3,
-      "last_date": "2026-10-06"
-    },
-    "638A": {
-      "name": "Ｐ−ハイネス",
-      "price": 3040,
-      "change": 0.0,
-      "volume": 66000,
-      "sector": "その他",
       "consecutive_days": 3,
       "last_date": "2026-10-06"
     },
