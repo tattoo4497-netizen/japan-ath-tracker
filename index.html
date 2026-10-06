@@ -2,17 +2,16 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>日本株 ATH 日記帳トラッカー</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATH株 日めくり記録帳</title>
     <style>
-        * { box-sizing: border-box; touch-action: manipulation; }
+        * { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: #0f111a;
             color: #e1e3ea;
             margin: 0;
             padding: 12px;
-            user-select: none;
         }
         .header {
             display: flex;
@@ -21,8 +20,12 @@
             margin-bottom: 12px;
         }
         h1 { font-size: 1.1rem; margin: 0; color: #fff; }
+        .header-actions {
+            display: flex;
+            gap: 6px;
+        }
         
-        /* 日めくりナビゲーションバー */
+        /* 日めくりナビゲーション */
         .date-card {
             background: #1a1d2e;
             border-radius: 12px;
@@ -38,34 +41,35 @@
             background: #2563eb;
             color: #fff;
             border: none;
-            padding: 8px 14px;
+            padding: 8px 12px;
             border-radius: 8px;
             font-weight: bold;
             font-size: 0.9rem;
             cursor: pointer;
         }
-        .nav-btn:disabled { background: #33374b; color: #666; }
-        .date-picker-wrapper {
-            text-align: center;
+        .nav-btn:active { background: #1d4ed8; }
+        .refresh-btn {
+            background: #374151;
+            color: #38bdf8;
+            border: 1px solid #4b5563;
         }
         .date-display {
             font-size: 1.1rem;
             font-weight: bold;
             color: #38bdf8;
+            text-align: center;
             cursor: pointer;
         }
         .date-subtext {
             font-size: 0.75rem;
             color: #8a8d9b;
-        }
-        input[type="date"] {
-            display: none;
+            text-align: center;
+            margin-top: 2px;
         }
 
         /* 銘柄リストコンテナ */
         .page-container {
-            min-height: 60vh;
-            transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+            min-height: 50vh;
         }
         .table-container {
             overflow-x: auto;
@@ -96,33 +100,31 @@
         }
         .up { color: #22c55e; }
         .down { color: #ef4444; }
-        .swipe-hint {
-            text-align: center;
-            font-size: 0.75rem;
-            color: #64748b;
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <h1>📖 ATH 日めくり日記帳</h1>
-        <button class="nav-btn" onclick="loadToday()">今日</button>
+        <h1>📖 ATH 日めくり記録帳</h1>
+        <div class="header-actions">
+            <button class="nav-btn refresh-btn" onclick="refreshData()">🔄 更新</button>
+            <button class="nav-btn" onclick="loadToday()">今日</button>
+        </div>
     </div>
 
     <!-- 日付めくりナビゲーション -->
     <div class="date-card">
-        <button class="nav-btn" id="prevBtn" onclick="changeDate(-1)">◀ 前日</button>
-        <div class="date-picker-wrapper" onclick="openDatePicker()">
-            <div class="date-display" id="dateDisplay">----/--/--</div>
+        <button class="nav-btn" onclick="changeDate(-1)">◀ 前日</button>
+        <div>
+            <div class="date-display" id="dateDisplay" onclick="document.getElementById('dateInput').click()">----/--/--</div>
             <div class="date-subtext" id="summaryText">読み込み中...</div>
-            <input type="date" id="hiddenDatePicker" onchange="onDateSelected(this.value)">
+            <div class="date-subtext" id="updatedTimeText" style="color: #38bdf8;"></div>
+            <input type="date" id="dateInput" style="display:none;" onchange="onDateSelected(this.value)">
         </div>
-        <button class="nav-btn" id="nextBtn" onclick="changeDate(1)">翌日 ▶</button>
+        <button class="nav-btn" onclick="changeDate(1)">翌日 ▶</button>
     </div>
 
-    <!-- スワイプ可能なコンテンツエリア -->
+    <!-- メイン表示エリア -->
     <div class="page-container" id="pageContainer">
         <div class="table-container">
             <table>
@@ -142,31 +144,31 @@
         </div>
     </div>
 
-    <div class="swipe-hint">👈 画面を左右にスワイプしてページをめくれます 👉</div>
-
     <script>
         let currentDate = new Date();
-        let touchStartX = 0;
-        let touchEndX = 0;
+        const BASE_DATA_URL = 'https://raw.githubusercontent.com/tattoo4497-netizen/japan-ath-tracker/main';
 
         function formatDate(d) {
             return d.toISOString().split('T')[0];
         }
 
-        async function loadDataForDate(dateStr) {
+        async function loadDataForDate(dateStr, forceRefresh = false) {
             const tbody = document.getElementById('stockTableBody');
             const display = document.getElementById('dateDisplay');
             const summary = document.getElementById('summaryText');
+            const updatedTimeDisplay = document.getElementById('updatedTimeText');
             
             display.textContent = dateStr;
-            summary.textContent = "取得中...";
+            summary.textContent = "読み込み中...";
+            updatedTimeDisplay.textContent = "";
             tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;">読み込み中...</td></tr>';
 
-            // 今日の日付なら ath_data.json、過去日なら history/YYYY-MM-DD.json を参照
             const todayStr = formatDate(new Date());
+            const cacheKey = forceRefresh ? `?v=${new Date().getTime()}` : `?v=${new Date().getHours()}`;
+            
             const fileUrl = (dateStr === todayStr) 
-                ? `ath_data.json?v=${new Date().getTime()}` 
-                : `history/${dateStr}.json`;
+                ? `${BASE_DATA_URL}/ath_data.json${cacheKey}` 
+                : `${BASE_DATA_URL}/history/${dateStr}.json${cacheKey}`;
 
             try {
                 const response = await fetch(fileUrl);
@@ -176,11 +178,19 @@
                 const stocks = Object.entries(data.stocks || {}).map(([code, info]) => ({ code, ...info }));
                 stocks.sort((a, b) => b.consecutive_days - a.consecutive_days || b.change - a.change);
 
-                summary.textContent = `更新銘柄: ${stocks.length} 件`;
+                summary.textContent = `記録銘柄: ${stocks.length} 件`;
+                
+                // 最終更新時間の表示
+                if (data.last_updated_time) {
+                    updatedTimeDisplay.textContent = `⏰ 最終更新: ${data.last_updated_time}`;
+                } else {
+                    updatedTimeDisplay.textContent = "";
+                }
+
                 tbody.innerHTML = '';
 
                 if (stocks.length === 0) {
-                    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;">この日のATH更新銘柄はありません</td></tr>';
+                    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;">この日の高値更新記録はありません</td></tr>';
                     return;
                 }
 
@@ -193,19 +203,17 @@
                         <td><b>${stock.code}</b></td>
                         <td>${stock.name}</td>
                         <td><span class="badge">${stock.consecutive_days}日連続 🔥</span></td>
-                        <td>¥${stock.price.toLocaleString()}</td>
+                        <td>¥${stock.price ? stock.price.toLocaleString() : '-'}</td>
                         <td class="${changeClass}">${changeSign}${stock.change}%</td>
                     `;
                     tbody.appendChild(tr);
                 });
 
             } catch (err) {
-                summary.textContent = "データなし";
+                summary.textContent = "記録なし";
+                updatedTimeDisplay.textContent = "";
                 tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; color:#8a8d9b;">この日の記録はありません</td></tr>';
             }
-            
-            // 翌日ボタンの制御（今日より先の未来へは行けないようにする）
-            document.getElementById('nextBtn').disabled = (dateStr >= todayStr);
         }
 
         function changeDate(days) {
@@ -218,8 +226,8 @@
             loadDataForDate(formatDate(currentDate));
         }
 
-        function openDatePicker() {
-            document.getElementById('hiddenDatePicker').showPicker();
+        function refreshData() {
+            loadDataForDate(formatDate(currentDate), true);
         }
 
         function onDateSelected(val) {
@@ -228,33 +236,7 @@
             loadDataForDate(val);
         }
 
-        // スマホの左右スワイプ処理
-        const container = document.getElementById('pageContainer');
-        container.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-        }, false);
-
-        container.addEventListener('touchend', e => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-        }, false);
-
-        function handleSwipe() {
-            const swipeThreshold = 50; // スワイプと判定する移動距離(px)
-            const todayStr = formatDate(new Date());
-            const currentStr = formatDate(currentDate);
-
-            if (touchStartX - touchEndX > swipeThreshold) {
-                // 左スワイプ ➔ 翌日へ（今日まで）
-                if (currentStr < todayStr) changeDate(1);
-            }
-            if (touchEndX - touchStartX > swipeThreshold) {
-                // 右スワイプ ➔ 前日へ
-                changeDate(-1);
-            }
-        }
-
-        // 初期読み込み
+        // 初期表示
         loadToday();
     </script>
 </body>
