@@ -58,8 +58,10 @@ def get_tradingview_ath_stocks():
     return stocks
 
 def update_ath_history(today_stocks):
-    """過去のデータと照合して連続日数を計算し、日別ログファイルを作成"""
-    today_str = datetime.now().strftime("%Y-%m-%d")
+    """過去のデータと照合して連続日数を計算し、時間付きで日別ログファイルを保存"""
+    now = datetime.now()
+    today_str = now.strftime("%Y-%m-%d")
+    current_time_str = now.strftime("%H:%M")
     
     # 履歴ディレクトリの作成
     os.makedirs(HISTORY_DIR, exist_ok=True)
@@ -100,6 +102,7 @@ def update_ath_history(today_stocks):
         
     result_data = {
         "last_updated": today_str,
+        "last_updated_time": current_time_str,
         "stocks": new_stocks
     }
     
@@ -107,12 +110,12 @@ def update_ath_history(today_stocks):
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(result_data, f, ensure_ascii=False, indent=2)
         
-    # 日別アーカイブファイル（例: history/2026-10-02.json）の保存
+    # 日別アーカイブファイル（例: history/2026-10-07.json）の保存
     daily_file = os.path.join(HISTORY_DIR, f"{today_str}.json")
     with open(daily_file, "w", encoding="utf-8") as f:
         json.dump(result_data, f, ensure_ascii=False, indent=2)
         
-    print(f"[{today_str}] 更新完了: {len(new_stocks)} 銘柄がATH更新 (履歴ファイルを保存しました)")
+    print(f"[{today_str} {current_time_str}] 更新完了: {len(new_stocks)} 銘柄")
     return result_data
 
 if __name__ == "__main__":
