@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-08",
-  "last_updated_time": "05:09",
+  "last_updated_time": "06:10",
   "stocks": {
     "436A": {
       "name": "サイバーソリューションズ",
@@ -22,9 +22,9 @@
     },
     "4417": {
       "name": "グローバルセキュリティエキスパート",
-      "price": 6700,
-      "change": 14.33,
-      "volume": 1128400,
+      "price": 6660,
+      "change": 13.65,
+      "volume": 1215200,
       "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-08"
@@ -40,28 +40,19 @@
     },
     "3762": {
       "name": "テクマトリックス",
-      "price": 2984,
-      "change": 9.02,
-      "volume": 934400,
+      "price": 2995,
+      "change": 9.43,
+      "volume": 1144000,
       "sector": "Technology Services",
       "consecutive_days": 3,
       "last_date": "2026-10-08"
     },
     "9889": {
       "name": "ＪＢＣＣホールディングス",
-      "price": 1855,
-      "change": 6.49,
-      "volume": 381000,
+      "price": 1848,
+      "change": 6.08,
+      "volume": 438700,
       "sector": "Electronic Technology",
-      "consecutive_days": 1,
-      "last_date": "2026-10-08"
-    },
-    "3132": {
-      "name": "マクニカホールディングス",
-      "price": 4573,
-      "change": 3.46,
-      "volume": 1257200,
-      "sector": "Distribution Services",
       "consecutive_days": 1,
       "last_date": "2026-10-08"
     },
@@ -74,76 +65,85 @@
       "consecutive_days": 5,
       "last_date": "2026-10-08"
     },
+    "3132": {
+      "name": "マクニカホールディングス",
+      "price": 4566,
+      "change": 3.3,
+      "volume": 1454100,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-08"
+    },
+    "4258": {
+      "name": "網屋",
+      "price": 6260,
+      "change": 3.3,
+      "volume": 972900,
+      "sector": "Technology Services",
+      "consecutive_days": 5,
+      "last_date": "2026-10-08"
+    },
     "3399": {
       "name": "丸千代山岡家",
-      "price": 4375,
-      "change": 3.18,
-      "volume": 150200,
+      "price": 4370,
+      "change": 3.07,
+      "volume": 170100,
       "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-10-08"
     },
     "4768": {
       "name": "大塚商会",
-      "price": 3852,
-      "change": 2.91,
-      "volume": 1048900,
+      "price": 3849,
+      "change": 2.83,
+      "volume": 1289100,
       "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-08"
     },
-    "4258": {
-      "name": "網屋",
-      "price": 6230,
-      "change": 2.81,
-      "volume": 867600,
-      "sector": "Technology Services",
-      "consecutive_days": 5,
-      "last_date": "2026-10-08"
-    },
-    "6337": {
-      "name": "テセック",
-      "price": 4140,
-      "change": 1.85,
-      "volume": 48800,
-      "sector": "Electronic Technology",
+    "25935": {
+      "name": "伊藤園−優",
+      "price": 1909,
+      "change": 2.47,
+      "volume": 247600,
+      "sector": "Consumer Non-Durables",
       "consecutive_days": 1,
       "last_date": "2026-10-08"
     },
     "4746": {
       "name": "東計電算",
-      "price": 2038,
-      "change": 1.7,
-      "volume": 166700,
+      "price": 2040,
+      "change": 1.8,
+      "volume": 189500,
       "sector": "Electronic Technology",
       "consecutive_days": 2,
       "last_date": "2026-10-08"
     },
+    "6337": {
+      "name": "テセック",
+      "price": 4125,
+      "change": 1.48,
+      "volume": 54300,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-08"
+    },
     "6724": {
       "name": "セイコーエプソン",
-      "price": 3391,
-      "change": 0.74,
-      "volume": 635600,
+      "price": 3410,
+      "change": 1.31,
+      "volume": 786400,
       "sector": "Electronic Technology",
       "consecutive_days": 5,
       "last_date": "2026-10-08"
     },
-    "2820": {
-      "name": "やまみ",
-      "price": 6760,
-      "change": 0,
-      "volume": 17700,
-      "sector": "Consumer Non-Durables",
+    "7976": {
+      "name": "三菱鉛筆",
+      "price": 3505,
+      "change": 0.57,
+      "volume": 74500,
+      "sector": "Consumer Durables",
       "consecutive_days": 1,
-      "last_date": "2026-10-08"
-    },
-    "5840": {
-      "name": "Ｐ−日本総険",
-      "price": 505,
-      "change": 0,
-      "volume": 1200,
-      "sector": "Finance",
-      "consecutive_days": 5,
       "last_date": "2026-10-08"
     },
     "507A": {
@@ -164,20 +164,38 @@
       "consecutive_days": 5,
       "last_date": "2026-10-08"
     },
+    "5840": {
+      "name": "Ｐ−日本総険",
+      "price": 505,
+      "change": 0,
+      "volume": 1200,
+      "sector": "Finance",
+      "consecutive_days": 5,
+      "last_date": "2026-10-08"
+    },
+    "2820": {
+      "name": "やまみ",
+      "price": 6680,
+      "change": -1.18,
+      "volume": 19300,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-10-08"
+    },
     "4461": {
       "name": "第一工業製薬",
-      "price": 16260,
-      "change": -2.81,
-      "volume": 90400,
+      "price": 16160,
+      "change": -3.41,
+      "volume": 111300,
       "sector": "Process Industries",
       "consecutive_days": 3,
       "last_date": "2026-10-08"
     },
     "7806": {
       "name": "Ｇ−ＭＴＧ",
-      "price": 9010,
-      "change": -3.64,
-      "volume": 196300,
+      "price": 8970,
+      "change": -4.06,
+      "volume": 237300,
       "sector": "Retail Trade",
       "consecutive_days": 1,
       "last_date": "2026-10-08"
@@ -189,6 +207,42 @@
       "volume": 1371000,
       "sector": "Commercial Services",
       "consecutive_days": 1,
+      "last_date": "2026-10-08"
+    },
+    "638A": {
+      "name": "Ｐ−ハイネス",
+      "price": 3040,
+      "change": 0.0,
+      "volume": 66000,
+      "sector": "その他",
+      "consecutive_days": 5,
+      "last_date": "2026-10-08"
+    },
+    "SAPSE:628A": {
+      "name": "Ｓ−カド―",
+      "price": 2680,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Consumer Durables",
+      "consecutive_days": 5,
+      "last_date": "2026-10-08"
+    },
+    "FSE:628A": {
+      "name": "Ｆ−カドー",
+      "price": 2680,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Consumer Durables",
+      "consecutive_days": 5,
+      "last_date": "2026-10-08"
+    },
+    "628A": {
+      "name": "Ｐ−カドー",
+      "price": 2680,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Consumer Durables",
+      "consecutive_days": 5,
       "last_date": "2026-10-08"
     },
     "NAG:3461": {
@@ -207,42 +261,6 @@
       "volume": 100,
       "sector": "その他",
       "consecutive_days": 1,
-      "last_date": "2026-10-08"
-    },
-    "SAPSE:628A": {
-      "name": "Ｓ−カド―",
-      "price": 2680,
-      "change": 0.0,
-      "volume": 100,
-      "sector": "Consumer Durables",
-      "consecutive_days": 5,
-      "last_date": "2026-10-08"
-    },
-    "628A": {
-      "name": "Ｐ−カドー",
-      "price": 2680,
-      "change": 0.0,
-      "volume": 100,
-      "sector": "Consumer Durables",
-      "consecutive_days": 5,
-      "last_date": "2026-10-08"
-    },
-    "FSE:628A": {
-      "name": "Ｆ−カドー",
-      "price": 2680,
-      "change": 0.0,
-      "volume": 100,
-      "sector": "Consumer Durables",
-      "consecutive_days": 5,
-      "last_date": "2026-10-08"
-    },
-    "638A": {
-      "name": "Ｐ−ハイネス",
-      "price": 3040,
-      "change": 0.0,
-      "volume": 66000,
-      "sector": "その他",
-      "consecutive_days": 5,
       "last_date": "2026-10-08"
     },
     "637A": {
