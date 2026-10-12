@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-12",
-  "last_updated_time": "01:14",
+  "last_updated_time": "02:09",
   "stocks": {
     "7713": {
       "name": "シグマ光機",
@@ -371,6 +371,15 @@
       "consecutive_days": 2,
       "last_date": "2026-10-12"
     },
+    "637A": {
+      "name": "Ｐ−オーリーズ",
+      "price": 145,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Commercial Services",
+      "consecutive_days": 7,
+      "last_date": "2026-10-12"
+    },
     "638A": {
       "name": "Ｐ−ハイネス",
       "price": 3040,
@@ -387,15 +396,6 @@
       "volume": 100,
       "sector": "Commercial Services",
       "consecutive_days": 3,
-      "last_date": "2026-10-12"
-    },
-    "637A": {
-      "name": "Ｐ−オーリーズ",
-      "price": 145,
-      "change": 0.0,
-      "volume": 100,
-      "sector": "Commercial Services",
-      "consecutive_days": 7,
       "last_date": "2026-10-12"
     }
   }
