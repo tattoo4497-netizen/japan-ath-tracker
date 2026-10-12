@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-12",
-  "last_updated_time": "04:10",
+  "last_updated_time": "05:10",
   "stocks": {
     "7713": {
       "name": "シグマ光機",
@@ -371,6 +371,15 @@
       "consecutive_days": 2,
       "last_date": "2026-10-12"
     },
+    "638A": {
+      "name": "Ｐ−ハイネス",
+      "price": 3040,
+      "change": 0.0,
+      "volume": 66000,
+      "sector": "Finance",
+      "consecutive_days": 7,
+      "last_date": "2026-10-12"
+    },
     "645A": {
       "name": "Ｐ−デジタルベリー",
       "price": 500,
@@ -386,15 +395,6 @@
       "change": 0.0,
       "volume": 100,
       "sector": "Commercial Services",
-      "consecutive_days": 7,
-      "last_date": "2026-10-12"
-    },
-    "638A": {
-      "name": "Ｐ−ハイネス",
-      "price": 3040,
-      "change": 0.0,
-      "volume": 66000,
-      "sector": "Finance",
       "consecutive_days": 7,
       "last_date": "2026-10-12"
     }
