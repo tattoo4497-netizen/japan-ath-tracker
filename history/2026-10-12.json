@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-12",
-  "last_updated_time": "00:11",
+  "last_updated_time": "01:14",
   "stocks": {
     "7713": {
       "name": "シグマ光機",
@@ -380,15 +380,6 @@
       "consecutive_days": 7,
       "last_date": "2026-10-12"
     },
-    "637A": {
-      "name": "Ｐ−オーリーズ",
-      "price": 145,
-      "change": 0.0,
-      "volume": 100,
-      "sector": "Commercial Services",
-      "consecutive_days": 7,
-      "last_date": "2026-10-12"
-    },
     "645A": {
       "name": "Ｐ−デジタルベリー",
       "price": 500,
@@ -396,6 +387,15 @@
       "volume": 100,
       "sector": "Commercial Services",
       "consecutive_days": 3,
+      "last_date": "2026-10-12"
+    },
+    "637A": {
+      "name": "Ｐ−オーリーズ",
+      "price": 145,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Commercial Services",
+      "consecutive_days": 7,
       "last_date": "2026-10-12"
     }
   }
