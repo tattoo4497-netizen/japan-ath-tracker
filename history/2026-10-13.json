@@ -1,12 +1,12 @@
 {
   "last_updated": "2026-10-13",
-  "last_updated_time": "02:09",
+  "last_updated_time": "03:09",
   "stocks": {
     "FSE:9334": {
       "name": "Ｑ−アイビスＨＤ",
-      "price": 780,
-      "change": 20,
-      "volume": 1500,
+      "price": 785,
+      "change": 20.77,
+      "volume": 2500,
       "sector": "Health Services",
       "consecutive_days": 1,
       "last_date": "2026-10-13"
@@ -20,6 +20,15 @@
       "consecutive_days": 8,
       "last_date": "2026-10-13"
     },
+    "436A": {
+      "name": "サイバーソリューションズ",
+      "price": 2153,
+      "change": 13.14,
+      "volume": 3611200,
+      "sector": "Technology Services",
+      "consecutive_days": 3,
+      "last_date": "2026-10-13"
+    },
     "NAG:4707": {
       "name": "キタック",
       "price": 394,
@@ -29,31 +38,31 @@
       "consecutive_days": 8,
       "last_date": "2026-10-13"
     },
-    "436A": {
-      "name": "サイバーソリューションズ",
-      "price": 2114,
-      "change": 11.09,
-      "volume": 3127200,
-      "sector": "Technology Services",
-      "consecutive_days": 3,
-      "last_date": "2026-10-13"
-    },
     "7713": {
       "name": "シグマ光機",
-      "price": 3370,
-      "change": 8.71,
-      "volume": 330500,
+      "price": 3325,
+      "change": 7.26,
+      "volume": 353100,
       "sector": "Electronic Technology",
       "consecutive_days": 3,
       "last_date": "2026-10-13"
     },
     "4417": {
       "name": "グローバルセキュリティエキスパート",
-      "price": 7010,
-      "change": 5.41,
-      "volume": 456400,
+      "price": 7070,
+      "change": 6.32,
+      "volume": 519100,
       "sector": "Technology Services",
       "consecutive_days": 1,
+      "last_date": "2026-10-13"
+    },
+    "3132": {
+      "name": "マクニカホールディングス",
+      "price": 4832,
+      "change": 4.27,
+      "volume": 1548600,
+      "sector": "Distribution Services",
+      "consecutive_days": 4,
       "last_date": "2026-10-13"
     },
     "NAG:8725": {
@@ -65,15 +74,6 @@
       "consecutive_days": 3,
       "last_date": "2026-10-13"
     },
-    "9104": {
-      "name": "商船三井",
-      "price": 7579,
-      "change": 3.81,
-      "volume": 1882700,
-      "sector": "Transportation",
-      "consecutive_days": 1,
-      "last_date": "2026-10-13"
-    },
     "NAG:6136": {
       "name": "オーエスジー",
       "price": 3719,
@@ -83,155 +83,155 @@
       "consecutive_days": 8,
       "last_date": "2026-10-13"
     },
-    "3132": {
-      "name": "マクニカホールディングス",
-      "price": 4785,
-      "change": 3.26,
-      "volume": 1299700,
-      "sector": "Distribution Services",
-      "consecutive_days": 4,
-      "last_date": "2026-10-13"
-    },
     "8159": {
       "name": "立花エレテック",
-      "price": 4570,
-      "change": 2.93,
-      "volume": 35200,
+      "price": 4585,
+      "change": 3.27,
+      "volume": 40300,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-13"
+    },
+    "3762": {
+      "name": "テクマトリックス",
+      "price": 3185,
+      "change": 3.24,
+      "volume": 540100,
+      "sector": "Technology Services",
+      "consecutive_days": 6,
+      "last_date": "2026-10-13"
+    },
+    "9104": {
+      "name": "商船三井",
+      "price": 7535,
+      "change": 3.21,
+      "volume": 2260300,
+      "sector": "Transportation",
+      "consecutive_days": 1,
+      "last_date": "2026-10-13"
+    },
+    "8060": {
+      "name": "キヤノンマーケティングジャパン",
+      "price": 3959,
+      "change": 2.83,
+      "volume": 267800,
       "sector": "Distribution Services",
       "consecutive_days": 1,
       "last_date": "2026-10-13"
     },
     "6676": {
       "name": "バッファロー",
-      "price": 3660,
-      "change": 2.81,
-      "volume": 31300,
+      "price": 3635,
+      "change": 2.11,
+      "volume": 33900,
       "sector": "Electronic Technology",
       "consecutive_days": 1,
       "last_date": "2026-10-13"
     },
-    "8060": {
-      "name": "キヤノンマーケティングジャパン",
-      "price": 3929,
-      "change": 2.05,
-      "volume": 237200,
-      "sector": "Distribution Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-13"
-    },
-    "7552": {
-      "name": "ハピネット",
-      "price": 5480,
-      "change": 2.05,
-      "volume": 108600,
-      "sector": "Distribution Services",
-      "consecutive_days": 4,
-      "last_date": "2026-10-13"
-    },
-    "3762": {
-      "name": "テクマトリックス",
-      "price": 3145,
-      "change": 1.94,
-      "volume": 463100,
-      "sector": "Technology Services",
-      "consecutive_days": 6,
-      "last_date": "2026-10-13"
-    },
-    "3040": {
-      "name": "ソリトンシステムズ",
-      "price": 3130,
-      "change": 1.46,
-      "volume": 736200,
-      "sector": "Technology Services",
-      "consecutive_days": 3,
-      "last_date": "2026-10-13"
-    },
-    "9069": {
-      "name": "センコー",
-      "price": 2401,
-      "change": 1.39,
-      "volume": 85500,
+    "618A": {
+      "name": "ＫＯＭＰＥＩＴＯ",
+      "price": 2060,
+      "change": 1.98,
+      "volume": 379400,
       "sector": "Transportation",
       "consecutive_days": 1,
       "last_date": "2026-10-13"
     },
     "4768": {
       "name": "大塚商会",
-      "price": 4057,
-      "change": 1.27,
-      "volume": 1106900,
+      "price": 4074,
+      "change": 1.7,
+      "volume": 1244100,
       "sector": "Technology Services",
       "consecutive_days": 4,
       "last_date": "2026-10-13"
     },
     "7832": {
       "name": "バンダイナムコホールディングス",
-      "price": 5904,
-      "change": 1.22,
-      "volume": 699100,
+      "price": 5930,
+      "change": 1.66,
+      "volume": 800200,
       "sector": "Consumer Durables",
       "consecutive_days": 3,
       "last_date": "2026-10-13"
     },
-    "7510": {
-      "name": "たけびし",
-      "price": 2960,
-      "change": 1.2,
-      "volume": 19200,
-      "sector": "Distribution Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-13"
-    },
-    "618A": {
-      "name": "ＫＯＭＰＥＩＴＯ",
-      "price": 2044,
-      "change": 1.19,
-      "volume": 337800,
-      "sector": "Transportation",
-      "consecutive_days": 1,
-      "last_date": "2026-10-13"
-    },
     "5186": {
       "name": "ニッタ",
-      "price": 7170,
-      "change": 1.13,
-      "volume": 45100,
+      "price": 7200,
+      "change": 1.55,
+      "volume": 48500,
       "sector": "Process Industries",
       "consecutive_days": 1,
       "last_date": "2026-10-13"
     },
+    "7510": {
+      "name": "たけびし",
+      "price": 2965,
+      "change": 1.37,
+      "volume": 20300,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-13"
+    },
+    "7552": {
+      "name": "ハピネット",
+      "price": 5430,
+      "change": 1.12,
+      "volume": 126800,
+      "sector": "Distribution Services",
+      "consecutive_days": 4,
+      "last_date": "2026-10-13"
+    },
     "25935": {
       "name": "伊藤園−優",
-      "price": 1926,
-      "change": 0.89,
-      "volume": 82200,
+      "price": 1928,
+      "change": 1.0,
+      "volume": 95000,
       "sector": "Consumer Non-Durables",
       "consecutive_days": 4,
       "last_date": "2026-10-13"
     },
-    "8052": {
-      "name": "椿本興業",
-      "price": 3120,
-      "change": 0.65,
-      "volume": 20100,
-      "sector": "Producer Manufacturing",
-      "consecutive_days": 1,
-      "last_date": "2026-10-13"
-    },
-    "6742": {
-      "name": "京三製作所",
-      "price": 1201,
-      "change": 0.5,
-      "volume": 206900,
-      "sector": "Electronic Technology",
+    "9069": {
+      "name": "センコー",
+      "price": 2387.5,
+      "change": 0.82,
+      "volume": 116800,
+      "sector": "Transportation",
       "consecutive_days": 1,
       "last_date": "2026-10-13"
     },
     "4212": {
       "name": "積水樹脂",
-      "price": 3055,
-      "change": 0.49,
-      "volume": 36600,
+      "price": 3060,
+      "change": 0.66,
+      "volume": 43200,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-13"
+    },
+    "3040": {
+      "name": "ソリトンシステムズ",
+      "price": 3105,
+      "change": 0.65,
+      "volume": 831100,
+      "sector": "Technology Services",
+      "consecutive_days": 3,
+      "last_date": "2026-10-13"
+    },
+    "3143": {
+      "name": "オーウイル",
+      "price": 1138,
+      "change": 0.44,
+      "volume": 20000,
+      "sector": "Health Technology",
+      "consecutive_days": 3,
+      "last_date": "2026-10-13"
+    },
+    "6742": {
+      "name": "京三製作所",
+      "price": 1200,
+      "change": 0.42,
+      "volume": 226900,
       "sector": "Electronic Technology",
       "consecutive_days": 1,
       "last_date": "2026-10-13"
@@ -240,17 +240,26 @@
       "name": "澁谷工業",
       "price": 5920,
       "change": 0.34,
-      "volume": 35400,
+      "volume": 41100,
       "sector": "Producer Manufacturing",
       "consecutive_days": 3,
       "last_date": "2026-10-13"
     },
     "6737": {
       "name": "ＥＩＺＯ",
-      "price": 3200,
-      "change": 0.31,
-      "volume": 36400,
+      "price": 3195,
+      "change": 0.16,
+      "volume": 45500,
       "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-13"
+    },
+    "3156": {
+      "name": "レスター",
+      "price": 6510,
+      "change": 0.15,
+      "volume": 55400,
+      "sector": "Distribution Services",
       "consecutive_days": 1,
       "last_date": "2026-10-13"
     },
@@ -263,110 +272,110 @@
       "consecutive_days": 8,
       "last_date": "2026-10-13"
     },
-    "7976": {
-      "name": "三菱鉛筆",
-      "price": 3545,
-      "change": -0.28,
-      "volume": 57300,
-      "sector": "Consumer Durables",
-      "consecutive_days": 4,
-      "last_date": "2026-10-13"
-    },
     "9889": {
       "name": "ＪＢＣＣホールディングス",
-      "price": 1901,
-      "change": -0.52,
-      "volume": 134900,
+      "price": 1910,
+      "change": -0.05,
+      "volume": 148300,
       "sector": "Electronic Technology",
       "consecutive_days": 4,
       "last_date": "2026-10-13"
     },
-    "3143": {
-      "name": "オーウイル",
-      "price": 1125,
-      "change": -0.71,
-      "volume": 17500,
-      "sector": "Health Technology",
-      "consecutive_days": 3,
+    "8052": {
+      "name": "椿本興業",
+      "price": 3095,
+      "change": -0.16,
+      "volume": 23400,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
       "last_date": "2026-10-13"
     },
-    "3968": {
-      "name": "セグエグループ",
-      "price": 819,
-      "change": -0.85,
-      "volume": 1123400,
-      "sector": "Technology Services",
+    "3106": {
+      "name": "倉敷紡績",
+      "price": 2536,
+      "change": -0.28,
+      "volume": 71600,
+      "sector": "Process Industries",
       "consecutive_days": 3,
       "last_date": "2026-10-13"
     },
     "9722": {
       "name": "藤田観光",
-      "price": 3170,
-      "change": -0.94,
-      "volume": 72400,
+      "price": 3185,
+      "change": -0.47,
+      "volume": 89300,
       "sector": "Consumer Services",
       "consecutive_days": 3,
       "last_date": "2026-10-13"
     },
-    "3106": {
-      "name": "倉敷紡績",
-      "price": 2517,
-      "change": -1.02,
-      "volume": 60500,
-      "sector": "Process Industries",
-      "consecutive_days": 3,
-      "last_date": "2026-10-13"
-    },
-    "5589": {
-      "name": "オートサーバー",
-      "price": 2965,
-      "change": -1.17,
-      "volume": 1400,
-      "sector": "Retail Trade",
-      "consecutive_days": 3,
+    "7976": {
+      "name": "三菱鉛筆",
+      "price": 3535,
+      "change": -0.56,
+      "volume": 67800,
+      "sector": "Consumer Durables",
+      "consecutive_days": 4,
       "last_date": "2026-10-13"
     },
     "4746": {
       "name": "東計電算",
-      "price": 2053,
-      "change": -1.72,
-      "volume": 117000,
+      "price": 2062,
+      "change": -1.29,
+      "volume": 131500,
       "sector": "Electronic Technology",
       "consecutive_days": 5,
       "last_date": "2026-10-13"
     },
+    "3968": {
+      "name": "セグエグループ",
+      "price": 814,
+      "change": -1.45,
+      "volume": 1307300,
+      "sector": "Technology Services",
+      "consecutive_days": 3,
+      "last_date": "2026-10-13"
+    },
     "4461": {
       "name": "第一工業製薬",
-      "price": 16140,
-      "change": -3.12,
-      "volume": 61800,
+      "price": 16340,
+      "change": -1.92,
+      "volume": 71500,
       "sector": "Process Industries",
       "consecutive_days": 1,
       "last_date": "2026-10-13"
     },
+    "5589": {
+      "name": "オートサーバー",
+      "price": 2936,
+      "change": -2.13,
+      "volume": 1500,
+      "sector": "Retail Trade",
+      "consecutive_days": 3,
+      "last_date": "2026-10-13"
+    },
     "6323": {
       "name": "ローツェ",
-      "price": 4964,
-      "change": -3.31,
-      "volume": 6330800,
+      "price": 5001,
+      "change": -2.59,
+      "volume": 6895500,
       "sector": "Electronic Technology",
       "consecutive_days": 1,
       "last_date": "2026-10-13"
     },
     "6490": {
       "name": "ＰＩＬＬＡＲ",
-      "price": 12380,
-      "change": -3.58,
-      "volume": 64800,
+      "price": 12450,
+      "change": -3.04,
+      "volume": 72800,
       "sector": "Producer Manufacturing",
       "consecutive_days": 3,
       "last_date": "2026-10-13"
     },
     "NAG:9334": {
       "name": "アイビスＨＤ",
-      "price": 795,
+      "price": 811,
       "change": 0.0,
-      "volume": 177800,
+      "volume": 271100,
       "sector": "Health Services",
       "consecutive_days": 1,
       "last_date": "2026-10-13"
@@ -380,15 +389,6 @@
       "consecutive_days": 1,
       "last_date": "2026-10-13"
     },
-    "645A": {
-      "name": "Ｐ−デジタルベリー",
-      "price": 500,
-      "change": 0.0,
-      "volume": 100,
-      "sector": "Commercial Services",
-      "consecutive_days": 4,
-      "last_date": "2026-10-13"
-    },
     "638A": {
       "name": "Ｐ−ハイネス",
       "price": 3040,
@@ -396,6 +396,15 @@
       "volume": 66000,
       "sector": "Finance",
       "consecutive_days": 8,
+      "last_date": "2026-10-13"
+    },
+    "645A": {
+      "name": "Ｐ−デジタルベリー",
+      "price": 500,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Commercial Services",
+      "consecutive_days": 4,
       "last_date": "2026-10-13"
     }
   }
