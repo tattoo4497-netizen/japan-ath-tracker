@@ -1,11 +1,14 @@
 import os
 import json
 import requests
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 TV_SCANNER_URL = "https://scanner.tradingview.com/japan/scan"
 DATA_FILE = "ath_data.json"
 HISTORY_DIR = "history"
+
+# 日本時間（JST = UTC+9）のタイムゾーン定義
+JST = timezone(timedelta(hours=9))
 
 def get_tradingview_ath_stocks():
     """TradingViewから上場来高値銘柄をそのまま取得"""
@@ -64,8 +67,8 @@ def get_tradingview_ath_stocks():
         return []
 
 def update_ath_history(today_stocks):
-    """取得したデータをそのまま記録・保存"""
-    now = datetime.now()
+    """日本時間で正確な日時を取得して記録・保存"""
+    now = datetime.now(JST)
     today_str = now.strftime("%Y-%m-%d")
     current_time_str = now.strftime("%H:%M")
     
