@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-15",
-  "last_updated_time": "07:46",
+  "last_updated_time": "07:50",
   "stocks": {
     "634A": {
       "name": "レイヤード",
@@ -8,7 +8,7 @@
       "change": 22.33,
       "volume": 66900,
       "sector": "Technology Services",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "NAG:9076": {
@@ -17,7 +17,7 @@
       "change": 15.8,
       "volume": 100,
       "sector": "Transportation",
-      "consecutive_days": 10,
+      "consecutive_days": 11,
       "last_date": "2026-10-15"
     },
     "7453": {
@@ -26,7 +26,7 @@
       "change": 9.51,
       "volume": 11324200,
       "sector": "Consumer Non-Durables",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "9861": {
@@ -35,7 +35,7 @@
       "change": 4.57,
       "volume": 771000,
       "sector": "Consumer Services",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "NAG:8725": {
@@ -44,7 +44,7 @@
       "change": 3.86,
       "volume": 100,
       "sector": "Finance",
-      "consecutive_days": 5,
+      "consecutive_days": 6,
       "last_date": "2026-10-15"
     },
     "3399": {
@@ -53,7 +53,7 @@
       "change": 3.53,
       "volume": 174100,
       "sector": "Consumer Services",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "NAG:6136": {
@@ -62,7 +62,7 @@
       "change": 3.31,
       "volume": 100,
       "sector": "Producer Manufacturing",
-      "consecutive_days": 10,
+      "consecutive_days": 11,
       "last_date": "2026-10-15"
     },
     "2531": {
@@ -71,7 +71,7 @@
       "change": 2.72,
       "volume": 1009900,
       "sector": "Consumer Non-Durables",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "8150": {
@@ -80,7 +80,7 @@
       "change": 2.67,
       "volume": 97700,
       "sector": "Distribution Services",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "3042": {
@@ -89,7 +89,7 @@
       "change": 2.43,
       "volume": 11546300,
       "sector": "Technology Services",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "7550": {
@@ -98,7 +98,7 @@
       "change": 2.39,
       "volume": 671900,
       "sector": "Consumer Services",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "2384": {
@@ -107,7 +107,7 @@
       "change": 2.34,
       "volume": 162600,
       "sector": "Commercial Services",
-      "consecutive_days": 2,
+      "consecutive_days": 3,
       "last_date": "2026-10-15"
     },
     "7976": {
@@ -116,7 +116,7 @@
       "change": 2.26,
       "volume": 188200,
       "sector": "Consumer Durables",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "7832": {
@@ -125,7 +125,7 @@
       "change": 2.26,
       "volume": 4423000,
       "sector": "Consumer Durables",
-      "consecutive_days": 2,
+      "consecutive_days": 3,
       "last_date": "2026-10-15"
     },
     "2914": {
@@ -134,7 +134,7 @@
       "change": 2.25,
       "volume": 6654400,
       "sector": "Consumer Non-Durables",
-      "consecutive_days": 2,
+      "consecutive_days": 3,
       "last_date": "2026-10-15"
     },
     "2612": {
@@ -143,7 +143,7 @@
       "change": 1.29,
       "volume": 341800,
       "sector": "Process Industries",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "9889": {
@@ -152,7 +152,7 @@
       "change": 1.23,
       "volume": 322400,
       "sector": "Electronic Technology",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "NAG:4707": {
@@ -161,7 +161,7 @@
       "change": 1.02,
       "volume": 100,
       "sector": "Commercial Services",
-      "consecutive_days": 10,
+      "consecutive_days": 11,
       "last_date": "2026-10-15"
     },
     "9147": {
@@ -170,7 +170,7 @@
       "change": 0.94,
       "volume": 1163600,
       "sector": "Transportation",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "3762": {
@@ -179,7 +179,7 @@
       "change": 0.78,
       "volume": 659700,
       "sector": "Technology Services",
-      "consecutive_days": 8,
+      "consecutive_days": 9,
       "last_date": "2026-10-15"
     },
     "7552": {
@@ -188,7 +188,7 @@
       "change": 0.36,
       "volume": 475900,
       "sector": "Distribution Services",
-      "consecutive_days": 6,
+      "consecutive_days": 7,
       "last_date": "2026-10-15"
     },
     "4212": {
@@ -197,7 +197,7 @@
       "change": 0.16,
       "volume": 94700,
       "sector": "Electronic Technology",
-      "consecutive_days": 3,
+      "consecutive_days": 4,
       "last_date": "2026-10-15"
     },
     "9636": {
@@ -206,7 +206,7 @@
       "change": 0.12,
       "volume": 29100,
       "sector": "Finance",
-      "consecutive_days": 1,
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
     "8157": {
@@ -215,7 +215,7 @@
       "change": 0,
       "volume": 70600,
       "sector": "Technology Services",
-      "consecutive_days": 2,
+      "consecutive_days": 3,
       "last_date": "2026-10-15"
     },
     "5589": {
@@ -224,7 +224,7 @@
       "change": -0.44,
       "volume": 4900,
       "sector": "Retail Trade",
-      "consecutive_days": 5,
+      "consecutive_days": 6,
       "last_date": "2026-10-15"
     },
     "5133": {
@@ -233,33 +233,6 @@
       "change": -7.28,
       "volume": 10426200,
       "sector": "Electronic Technology",
-      "consecutive_days": 2,
-      "last_date": "2026-10-15"
-    },
-    "645A": {
-      "name": "Ｐ−デジタルベリー",
-      "price": 500,
-      "change": 0.0,
-      "volume": 100,
-      "sector": "Commercial Services",
-      "consecutive_days": 6,
-      "last_date": "2026-10-15"
-    },
-    "648A": {
-      "name": "Ｇ−ルクレ",
-      "price": 2295,
-      "change": 0.0,
-      "volume": 8217100,
-      "sector": "その他",
-      "consecutive_days": 1,
-      "last_date": "2026-10-15"
-    },
-    "647A": {
-      "name": "Ｐ−東京みらい不動産",
-      "price": 500,
-      "change": 0.0,
-      "volume": 100,
-      "sector": "Finance",
       "consecutive_days": 3,
       "last_date": "2026-10-15"
     },
@@ -269,7 +242,34 @@
       "change": 0.0,
       "volume": 66000,
       "sector": "Finance",
-      "consecutive_days": 10,
+      "consecutive_days": 11,
+      "last_date": "2026-10-15"
+    },
+    "645A": {
+      "name": "Ｐ−デジタルベリー",
+      "price": 500,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Commercial Services",
+      "consecutive_days": 7,
+      "last_date": "2026-10-15"
+    },
+    "647A": {
+      "name": "Ｐ−東京みらい不動産",
+      "price": 500,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Finance",
+      "consecutive_days": 4,
+      "last_date": "2026-10-15"
+    },
+    "648A": {
+      "name": "Ｇ−ルクレ",
+      "price": 2295,
+      "change": 0.0,
+      "volume": 8217100,
+      "sector": "その他",
+      "consecutive_days": 2,
       "last_date": "2026-10-15"
     }
   }
