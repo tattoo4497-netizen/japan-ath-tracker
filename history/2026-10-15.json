@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-15",
-  "last_updated_time": "10:35",
+  "last_updated_time": "10:39",
   "stocks": {
     "634A": {
       "name": "レイヤード",
@@ -206,6 +206,69 @@
       "change": 0.12,
       "volume": 29100,
       "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-15"
+    },
+    "8157": {
+      "name": "都築電気",
+      "price": 4400,
+      "change": 0,
+      "volume": 70600,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-15"
+    },
+    "5589": {
+      "name": "オートサーバー",
+      "price": 2946,
+      "change": -0.44,
+      "volume": 4900,
+      "sector": "Retail Trade",
+      "consecutive_days": 1,
+      "last_date": "2026-10-15"
+    },
+    "5133": {
+      "name": "テリロジーホールディングス",
+      "price": 420,
+      "change": -7.28,
+      "volume": 10426200,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-15"
+    },
+    "647A": {
+      "name": "Ｐ−東京みらい不動産",
+      "price": 500,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-15"
+    },
+    "638A": {
+      "name": "Ｐ−ハイネス",
+      "price": 3040,
+      "change": 0.0,
+      "volume": 66000,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-15"
+    },
+    "648A": {
+      "name": "Ｇ−ルクレ",
+      "price": 2295,
+      "change": 0.0,
+      "volume": 8217100,
+      "sector": "その他",
+      "consecutive_days": 1,
+      "last_date": "2026-10-15"
+    },
+    "645A": {
+      "name": "Ｐ−デジタルベリー",
+      "price": 500,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Commercial Services",
       "consecutive_days": 1,
       "last_date": "2026-10-15"
     }
