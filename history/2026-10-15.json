@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-15",
-  "last_updated_time": "07:32",
+  "last_updated_time": "07:46",
   "stocks": {
     "634A": {
       "name": "レイヤード",
@@ -236,6 +236,15 @@
       "consecutive_days": 2,
       "last_date": "2026-10-15"
     },
+    "645A": {
+      "name": "Ｐ−デジタルベリー",
+      "price": 500,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Commercial Services",
+      "consecutive_days": 6,
+      "last_date": "2026-10-15"
+    },
     "648A": {
       "name": "Ｇ−ルクレ",
       "price": 2295,
@@ -243,15 +252,6 @@
       "volume": 8217100,
       "sector": "その他",
       "consecutive_days": 1,
-      "last_date": "2026-10-15"
-    },
-    "638A": {
-      "name": "Ｐ−ハイネス",
-      "price": 3040,
-      "change": 0.0,
-      "volume": 66000,
-      "sector": "Finance",
-      "consecutive_days": 10,
       "last_date": "2026-10-15"
     },
     "647A": {
@@ -263,13 +263,13 @@
       "consecutive_days": 3,
       "last_date": "2026-10-15"
     },
-    "645A": {
-      "name": "Ｐ−デジタルベリー",
-      "price": 500,
+    "638A": {
+      "name": "Ｐ−ハイネス",
+      "price": 3040,
       "change": 0.0,
-      "volume": 100,
-      "sector": "Commercial Services",
-      "consecutive_days": 6,
+      "volume": 66000,
+      "sector": "Finance",
+      "consecutive_days": 10,
       "last_date": "2026-10-15"
     }
   }
