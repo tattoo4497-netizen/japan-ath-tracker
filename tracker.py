@@ -8,17 +8,18 @@ DATA_FILE = "ath_data.json"
 HISTORY_DIR = "history"
 
 def get_tradingview_ath_stocks():
-    """TradingViewから上場来高値（ATH）更新銘柄を取得（個別株のみ）"""
+    """TradingViewの上場来高値（ATH）銘柄ページと完全一致する条件でスキャン"""
     payload = {
         "filter": [
             {"left": "High.All", "operation": "equal", "right": "high"},
-            {"left": "type", "operation": "equal", "right": "stock"}
+            {"left": "type", "operation": "equal", "right": "stock"},
+            {"left": "exchange", "operation": "equal", "right": "TSE"}
         ],
         "options": {"lang": "ja"},
         "symbols": {"query": {"types": ["stock"]}, "tickers": []},
         "columns": ["name", "description", "close", "change", "volume", "sector", "type"],
         "sort": {"sortBy": "change", "sortOrder": "desc"},
-        "range": [0, 300]
+        "range": [0, 500]
     }
     
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
@@ -30,6 +31,7 @@ def get_tradingview_ath_stocks():
         
     data = response.json()
     stocks = []
+    
     for item in data.get("data", []):
         code = item["s"].replace("TSE:", "")
         cols = item["d"]
@@ -37,11 +39,12 @@ def get_tradingview_ath_stocks():
         sector_name = cols[5] or ""
         item_type = cols[6] or ""
         
+        # 株式以外や投資信託・ETFなどを除外
         if item_type != "stock" or "ETF" in sector_name or "Fund" in sector_name:
             continue
             
         name = cols[1] or code
-        if "ETF" in name or "iシェアーズ" in name or "上場投信" in name:
+        if "ETF" in name or "iシェアーズ" in name or "上場投信" in name or "ETN" in name:
             continue
 
         raw_change = cols[3]
@@ -55,6 +58,8 @@ def get_tradingview_ath_stocks():
             "volume": cols[4] or 0,
             "sector": sector_name or "その他"
         })
+        
+    print(f"取得成功: {len(stocks)} 銘柄")
     return stocks
 
 def update_ath_history(today_stocks):
@@ -63,10 +68,8 @@ def update_ath_history(today_stocks):
     today_str = now.strftime("%Y-%m-%d")
     current_time_str = now.strftime("%H:%M")
     
-    # 履歴ディレクトリの作成
     os.makedirs(HISTORY_DIR, exist_ok=True)
     
-    # 既存データの読み込み
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r", encoding="utf-8") as f:
             try:
@@ -106,16 +109,14 @@ def update_ath_history(today_stocks):
         "stocks": new_stocks
     }
     
-    # 最新データの保存
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(result_data, f, ensure_ascii=False, indent=2)
         
-    # 日別アーカイブファイル（例: history/2026-10-07.json）の保存
     daily_file = os.path.join(HISTORY_DIR, f"{today_str}.json")
     with open(daily_file, "w", encoding="utf-8") as f:
         json.dump(result_data, f, ensure_ascii=False, indent=2)
         
-    print(f"[{today_str} {current_time_str}] 更新完了: {len(new_stocks)} 銘柄")
+    print(f"[{today_str} {current_time_str}] 保存完了: {len(new_stocks)} 銘柄")
     return result_data
 
 if __name__ == "__main__":
