@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-15",
-  "last_updated_time": "10:39",
+  "last_updated_time": "19:41",
   "stocks": {
     "634A": {
       "name": "レイヤード",
@@ -236,12 +236,12 @@
       "consecutive_days": 1,
       "last_date": "2026-10-15"
     },
-    "647A": {
-      "name": "Ｐ−東京みらい不動産",
-      "price": 500,
+    "648A": {
+      "name": "Ｇ−ルクレ",
+      "price": 2295,
       "change": 0.0,
-      "volume": 100,
-      "sector": "Finance",
+      "volume": 8217100,
+      "sector": "その他",
       "consecutive_days": 1,
       "last_date": "2026-10-15"
     },
@@ -254,21 +254,21 @@
       "consecutive_days": 1,
       "last_date": "2026-10-15"
     },
-    "648A": {
-      "name": "Ｇ−ルクレ",
-      "price": 2295,
-      "change": 0.0,
-      "volume": 8217100,
-      "sector": "その他",
-      "consecutive_days": 1,
-      "last_date": "2026-10-15"
-    },
     "645A": {
       "name": "Ｐ−デジタルベリー",
       "price": 500,
       "change": 0.0,
       "volume": 100,
       "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-15"
+    },
+    "647A": {
+      "name": "Ｐ−東京みらい不動産",
+      "price": 500,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Finance",
       "consecutive_days": 1,
       "last_date": "2026-10-15"
     }
