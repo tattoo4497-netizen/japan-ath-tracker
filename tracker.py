@@ -8,12 +8,11 @@ DATA_FILE = "ath_data.json"
 HISTORY_DIR = "history"
 
 def get_tradingview_ath_stocks():
-    """TradingViewの上場来高値（ATH）銘柄ページと完全一致する条件でスキャン"""
+    """TradingViewから上場来高値（ATH）銘柄を安全に取得"""
     payload = {
         "filter": [
             {"left": "High.All", "operation": "equal", "right": "high"},
-            {"left": "type", "operation": "equal", "right": "stock"},
-            {"left": "exchange", "operation": "equal", "right": "TSE"}
+            {"left": "type", "operation": "equal", "right": "stock"}
         ],
         "options": {"lang": "ja"},
         "symbols": {"query": {"types": ["stock"]}, "tickers": []},
@@ -24,46 +23,50 @@ def get_tradingview_ath_stocks():
     
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
     
-    response = requests.post(TV_SCANNER_URL, json=payload, headers=headers)
-    if response.status_code != 200:
-        print(f"Error fetching data: {response.status_code}")
-        return []
-        
-    data = response.json()
-    stocks = []
-    
-    for item in data.get("data", []):
-        code = item["s"].replace("TSE:", "")
-        cols = item["d"]
-        
-        sector_name = cols[5] or ""
-        item_type = cols[6] or ""
-        
-        # 株式以外や投資信託・ETFなどを除外
-        if item_type != "stock" or "ETF" in sector_name or "Fund" in sector_name:
-            continue
+    try:
+        response = requests.post(TV_SCANNER_URL, json=payload, headers=headers)
+        print(f"Status Code: {response.status_code}")
+        if response.status_code != 200:
+            print(f"Error response: {response.text}")
+            return []
             
-        name = cols[1] or code
-        if "ETF" in name or "iシェアーズ" in name or "上場投信" in name or "ETN" in name:
-            continue
+        data = response.json()
+        stocks = []
+        
+        for item in data.get("data", []):
+            code = item["s"].replace("TSE:", "")
+            cols = item["d"]
+            
+            sector_name = cols[5] or ""
+            item_type = cols[6] or ""
+            
+            if item_type != "stock" or "ETF" in sector_name or "Fund" in sector_name:
+                continue
+                
+            name = cols[1] or code
+            if "ETF" in name or "iシェアーズ" in name or "上場投信" in name or "ETN" in name:
+                continue
 
-        raw_change = cols[3]
-        change_val = round(raw_change, 2) if raw_change is not None else 0.0
-        
-        stocks.append({
-            "code": code,
-            "name": name,
-            "price": cols[2] or 0,
-            "change": change_val,
-            "volume": cols[4] or 0,
-            "sector": sector_name or "その他"
-        })
-        
-    print(f"取得成功: {len(stocks)} 銘柄")
-    return stocks
+            raw_change = cols[3]
+            change_val = round(raw_change, 2) if raw_change is not None else 0.0
+            
+            stocks.append({
+                "code": code,
+                "name": name,
+                "price": cols[2] or 0,
+                "change": change_val,
+                "volume": cols[4] or 0,
+                "sector": sector_name or "その他"
+            })
+            
+        print(f"取得成功: {len(stocks)} 銘柄")
+        return stocks
+    except Exception as e:
+        print(f"例外発生: {e}")
+        return []
 
 def update_ath_history(today_stocks):
-    """過去のデータと照合して連続日数を計算し、時間付きで日別ログファイルを保存"""
+    """過去のデータと照合して連続日数を計算し、保存"""
     now = datetime.now()
     today_str = now.strftime("%Y-%m-%d")
     current_time_str = now.strftime("%H:%M")
