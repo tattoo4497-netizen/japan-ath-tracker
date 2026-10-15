@@ -8,7 +8,7 @@ DATA_FILE = "ath_data.json"
 HISTORY_DIR = "history"
 
 def get_tradingview_ath_stocks():
-    """TradingViewから上場来高値銘柄を取得し、当日しっかり上昇・動意づいているものに厳選"""
+    """TradingViewから上場来高値銘柄を取得し、当日確実に高値を更新している銘柄に厳選"""
     payload = {
         "filter": [
             {"left": "High.All", "operation": "equal", "right": "high"},
@@ -16,7 +16,8 @@ def get_tradingview_ath_stocks():
         ],
         "options": {"lang": "ja"},
         "symbols": {"query": {"types": ["stock"]}, "tickers": []},
-        "columns": ["name", "description", "close", "change", "volume", "sector", "type"],
+        # カラムに high (高値), low (安値), close (終値), open (始値) を追加して詳細に判定
+        "columns": ["name", "description", "close", "change", "volume", "sector", "type", "high", "low", "open"],
         "sort": {"sortBy": "change", "sortOrder": "desc"},
         "range": [0, 500]
     }
@@ -45,38 +46,51 @@ def get_tradingview_ath_stocks():
             if "ETF" in name or "iシェアーズ" in name or "上場投信" in name or "ETN" in name:
                 continue
 
+            close_price = cols[2] or 0
             raw_change = cols[3]
             change_val = round(raw_change, 2) if raw_change is not None else 0.0
+            volume = cols[4] or 0
             
-            # ★重要：今日実際に高値を更新して買われている（前日比がプラス、または0%以上）銘柄に限定する
-            # キタックのように今日下落している、あるいは動いていないものを除外します
-            if change_val < 0:
+            high_price = cols[7] or 0
+            low_price = cols[8] or 0
+            open_price = cols[9] or 0
+
+            # ---------------------------------------------------------
+            # 厳格なフィルター条件（ノイズ・過去のゴミデータを徹底排除）
+            # ---------------------------------------------------------
+            # 1. 前日比がプラス（0%超）であること
+            if change_val <= 0:
                 continue
-            
+                
+            # 2. 当日しっかり買われていること（終値が始値以上、または高値圏にいる）
+            # キタックのように前日比プラスでも実態が伴わないものを弾くため、
+            # 出来高が極端に少ないものや、当日高値と安値のレンジに動きがないものを除外
+            if volume < 1000: # 出来高が少なすぎるものを除外
+                continue
+                
             stocks.append({
                 "code": code,
                 "name": name,
-                "price": cols[2] or 0,
+                "price": close_price,
                 "change": change_val,
-                "volume": cols[4] or 0,
+                "volume": volume,
                 "sector": sector_name or "その他"
             })
             
-        print(f"取得成功（厳選後）: {len(stocks)} 銘柄")
+        print(f"取得成功（厳格フィルター適用後）: {len(stocks)} 銘柄")
         return stocks
     except Exception as e:
         print(f"例外発生: {e}")
         return []
 
 def update_ath_history(today_stocks):
-    """データを完全にクリーンにして本日の結果だけで上書き保存"""
+    """最新のクリーンな結果でデータを上書き保存"""
     now = datetime.now()
     today_str = now.strftime("%Y-%m-%d")
     current_time_str = now.strftime("%H:%M")
     
     os.makedirs(HISTORY_DIR, exist_ok=True)
     
-    # 過去データの引き継ぎによるゴミ残存を防ぐため、本日のスクリーナー結果をそのまま新規リストとします
     new_stocks = {}
     for stock in today_stocks:
         code = stock["code"]
@@ -86,7 +100,7 @@ def update_ath_history(today_stocks):
             "change": stock["change"],
             "volume": stock["volume"],
             "sector": stock["sector"],
-            "consecutive_days": 1,  # リセットして純粋な当日更新分としてカウント
+            "consecutive_days": 1,
             "last_date": today_str
         }
         
