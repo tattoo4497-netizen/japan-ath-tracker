@@ -8,7 +8,7 @@ DATA_FILE = "ath_data.json"
 HISTORY_DIR = "history"
 
 def get_tradingview_ath_stocks():
-    """TradingViewから上場来高値銘柄を取得し、当日しっかりプラスの銘柄のみを正確に抽出"""
+    """TradingViewから上場来高値銘柄をそのまま取得"""
     payload = {
         "filter": [
             {"left": "High.All", "operation": "equal", "right": "high"},
@@ -48,11 +48,6 @@ def get_tradingview_ath_stocks():
             raw_change = cols[3]
             change_val = round(raw_change, 2) if raw_change is not None else 0.0
             
-            # キタックなどの「今日高値を更新していない（マイナスや0%の）銘柄」を確実に除外
-            # プラスの銘柄だけを漏れなく拾います
-            if change_val <= 0:
-                continue
-            
             stocks.append({
                 "code": code,
                 "name": name,
@@ -69,7 +64,7 @@ def get_tradingview_ath_stocks():
         return []
 
 def update_ath_history(today_stocks):
-    """最新の結果でデータを正確に更新"""
+    """取得したデータをそのまま記録・保存"""
     now = datetime.now()
     today_str = now.strftime("%Y-%m-%d")
     current_time_str = now.strftime("%H:%M")
