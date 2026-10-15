@@ -8,7 +8,7 @@ DATA_FILE = "ath_data.json"
 HISTORY_DIR = "history"
 
 def get_tradingview_ath_stocks():
-    """TradingViewから上場来高値（ATH）銘柄を安全に取得"""
+    """TradingViewから上場来高値（ATH）銘柄を取得"""
     payload = {
         "filter": [
             {"left": "High.All", "operation": "equal", "right": "high"},
@@ -16,7 +16,7 @@ def get_tradingview_ath_stocks():
         ],
         "options": {"lang": "ja"},
         "symbols": {"query": {"types": ["stock"]}, "tickers": []},
-        "columns": ["name", "description", "close", "change", "volume", "sector", "type"],
+        "columns": ["name", "description", "close", "change", "volume", "sector", "type", "high"],
         "sort": {"sortBy": "change", "sortOrder": "desc"},
         "range": [0, 500]
     }
@@ -25,9 +25,7 @@ def get_tradingview_ath_stocks():
     
     try:
         response = requests.post(TV_SCANNER_URL, json=payload, headers=headers)
-        print(f"Status Code: {response.status_code}")
         if response.status_code != 200:
-            print(f"Error response: {response.text}")
             return []
             
         data = response.json()
@@ -50,6 +48,9 @@ def get_tradingview_ath_stocks():
             raw_change = cols[3]
             change_val = round(raw_change, 2) if raw_change is not None else 0.0
             
+            # 本日下落している銘柄や、明らかに高値更新していないものを除外する場合のフィルター
+            # （必要に応じて有効化できますが、まずは純粋なAPI結果をクリーンに格納します）
+            
             stocks.append({
                 "code": code,
                 "name": name,
@@ -66,35 +67,32 @@ def get_tradingview_ath_stocks():
         return []
 
 def update_ath_history(today_stocks):
-    """過去のデータと照合して連続日数を計算し、保存"""
+    """本日のデータで正しく更新（過去のゴミデータをクリア）"""
     now = datetime.now()
     today_str = now.strftime("%Y-%m-%d")
     current_time_str = now.strftime("%H:%M")
     
     os.makedirs(HISTORY_DIR, exist_ok=True)
     
+    # 昨日のデータを読み込む（連続日数の引き継ぎ用）
+    # ※もし完全にリセットしたい場合は前日読み込みをスキップしてください
+    prev_stocks = {}
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r", encoding="utf-8") as f:
             try:
-                history = json.load(f)
+                old_data = json.load(f)
+                prev_stocks = old_data.get("stocks", {})
             except Exception:
-                history = {"last_updated": "", "stocks": {}}
-    else:
-        history = {"last_updated": "", "stocks": {}}
-        
-    last_updated_date = history.get("last_updated", "")
-    prev_stocks = history.get("stocks", {})
+                pass
+                
     new_stocks = {}
-    
     for stock in today_stocks:
         code = stock["code"]
         prev_data = prev_stocks.get(code, {})
         prev_consecutive = prev_data.get("consecutive_days", 0)
         
-        if last_updated_date == today_str:
-            consecutive_days = prev_consecutive if prev_consecutive > 0 else 1
-        else:
-            consecutive_days = prev_consecutive + 1 if prev_consecutive > 0 else 1
+        # 本日もリストに含まれている場合は連続日数を加算、新規は1
+        consecutive_days = prev_consecutive + 1 if prev_consecutive > 0 else 1
         
         new_stocks[code] = {
             "name": stock["name"],
