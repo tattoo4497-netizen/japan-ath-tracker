@@ -1,13 +1,31 @@
 {
   "last_updated": "2026-10-16",
-  "last_updated_time": "09:15",
+  "last_updated_time": "10:24",
   "stocks": {
-    "634A": {
-      "name": "レイヤード",
-      "price": 3835,
-      "change": 22.33,
-      "volume": 66900,
+    "5133": {
+      "name": "テリロジーホールディングス",
+      "price": 500,
+      "change": 19.05,
+      "volume": 4071300,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "3042": {
+      "name": "セキュアヴェイル",
+      "price": 950,
+      "change": 18.75,
+      "volume": 1985800,
       "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "6532": {
+      "name": "ベイカレント",
+      "price": 10195,
+      "change": 17.25,
+      "volume": 555500,
+      "sector": "Commercial Services",
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
@@ -20,21 +38,165 @@
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
-    "7453": {
-      "name": "良品計画",
-      "price": 4804,
-      "change": 9.51,
-      "volume": 11324200,
+    "367A": {
+      "name": "プリモグローバルホールディングス",
+      "price": 3160,
+      "change": 14.41,
+      "volume": 144000,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "446A": {
+      "name": "ノースサンド",
+      "price": 2693,
+      "change": 11.84,
+      "volume": 291400,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "3040": {
+      "name": "ソリトンシステムズ",
+      "price": 3450,
+      "change": 10.22,
+      "volume": 229100,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "2531": {
+      "name": "宝ホールディングス",
+      "price": 2996.5,
+      "change": 9.36,
+      "volume": 392400,
       "sector": "Consumer Non-Durables",
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
-    "9861": {
-      "name": "吉野家ホールディングス",
-      "price": 4141,
-      "change": 4.57,
-      "volume": 771000,
-      "sector": "Consumer Services",
+    "4373": {
+      "name": "シンプレクス・ホールディングス",
+      "price": 1293,
+      "change": 7.48,
+      "volume": 470000,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "9889": {
+      "name": "ＪＢＣＣホールディングス",
+      "price": 2108,
+      "change": 6.46,
+      "volume": 158000,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "8022": {
+      "name": "美津濃",
+      "price": 4630,
+      "change": 5.83,
+      "volume": 108000,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "3762": {
+      "name": "テクマトリックス",
+      "price": 3420,
+      "change": 5.56,
+      "volume": 221500,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "4746": {
+      "name": "東計電算",
+      "price": 2156,
+      "change": 5.17,
+      "volume": 97000,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "4674": {
+      "name": "クレスコ",
+      "price": 2162,
+      "change": 5.05,
+      "volume": 42700,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "4684": {
+      "name": "オービック",
+      "price": 5823,
+      "change": 4.75,
+      "volume": 637700,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "4733": {
+      "name": "オービックビジネスコンサルタント",
+      "price": 9468,
+      "change": 4.43,
+      "volume": 55400,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "7832": {
+      "name": "バンダイナムコホールディングス",
+      "price": 6386,
+      "change": 4.36,
+      "volume": 978700,
+      "sector": "Consumer Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "7552": {
+      "name": "ハピネット",
+      "price": 5770,
+      "change": 4.34,
+      "volume": 131300,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "6947": {
+      "name": "図研",
+      "price": 5880,
+      "change": 4.26,
+      "volume": 24300,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "6638": {
+      "name": "ミマキエンジニアリング",
+      "price": 2438,
+      "change": 4.14,
+      "volume": 43400,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "NAG:418A": {
+      "name": "ウリドキ",
+      "price": 1649,
+      "change": 4.1,
+      "volume": 35000,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "7976": {
+      "name": "三菱鉛筆",
+      "price": 3760,
+      "change": 4.01,
+      "volume": 42300,
+      "sector": "Consumer Durables",
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
@@ -47,12 +209,30 @@
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
-    "3399": {
-      "name": "丸千代山岡家",
-      "price": 4695,
-      "change": 3.53,
-      "volume": 174100,
-      "sector": "Consumer Services",
+    "6676": {
+      "name": "バッファロー",
+      "price": 3735,
+      "change": 3.61,
+      "volume": 14700,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "4768": {
+      "name": "大塚商会",
+      "price": 4264,
+      "change": 3.47,
+      "volume": 329600,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "6098": {
+      "name": "リクルートホールディングス",
+      "price": 19005,
+      "change": 3.4,
+      "volume": 1913200,
+      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
@@ -65,93 +245,93 @@
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
-    "2531": {
-      "name": "宝ホールディングス",
-      "price": 2740,
-      "change": 2.72,
-      "volume": 1009900,
-      "sector": "Consumer Non-Durables",
+    "8157": {
+      "name": "都築電気",
+      "price": 4515,
+      "change": 2.61,
+      "volume": 12400,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "9658": {
+      "name": "ビジネスブレイン太田昭和",
+      "price": 1242,
+      "change": 2.48,
+      "volume": 27000,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "8060": {
+      "name": "キヤノンマーケティングジャパン",
+      "price": 4055,
+      "change": 1.94,
+      "volume": 74100,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "6457": {
+      "name": "グローリー",
+      "price": 4993,
+      "change": 1.9,
+      "volume": 79100,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "3091": {
+      "name": "ブロンコビリー",
+      "price": 2944,
+      "change": 1.87,
+      "volume": 30900,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "3399": {
+      "name": "丸千代山岡家",
+      "price": 4775,
+      "change": 1.7,
+      "volume": 48300,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "4212": {
+      "name": "積水樹脂",
+      "price": 3150,
+      "change": 1.29,
+      "volume": 26800,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "3143": {
+      "name": "オーウイル",
+      "price": 1163,
+      "change": 1.22,
+      "volume": 9400,
+      "sector": "Health Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-16"
+    },
+    "9147": {
+      "name": "ＮＩＰＰＯＮ　ＥＸＰＲＥＳＳ　ホールディングス",
+      "price": 5970,
+      "change": 1.19,
+      "volume": 306000,
+      "sector": "Transportation",
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
     "8150": {
       "name": "三信電気",
-      "price": 3455,
-      "change": 2.67,
-      "volume": 97700,
+      "price": 3495,
+      "change": 1.16,
+      "volume": 45300,
       "sector": "Distribution Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-16"
-    },
-    "3042": {
-      "name": "セキュアヴェイル",
-      "price": 800,
-      "change": 2.43,
-      "volume": 11546300,
-      "sector": "Technology Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-16"
-    },
-    "7550": {
-      "name": "ゼンショーホールディングス",
-      "price": 11980,
-      "change": 2.39,
-      "volume": 671900,
-      "sector": "Consumer Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-16"
-    },
-    "2384": {
-      "name": "ＳＢＳホールディングス",
-      "price": 5680,
-      "change": 2.34,
-      "volume": 162600,
-      "sector": "Commercial Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-16"
-    },
-    "7976": {
-      "name": "三菱鉛筆",
-      "price": 3615,
-      "change": 2.26,
-      "volume": 188200,
-      "sector": "Consumer Durables",
-      "consecutive_days": 1,
-      "last_date": "2026-10-16"
-    },
-    "7832": {
-      "name": "バンダイナムコホールディングス",
-      "price": 6119,
-      "change": 2.26,
-      "volume": 4423000,
-      "sector": "Consumer Durables",
-      "consecutive_days": 1,
-      "last_date": "2026-10-16"
-    },
-    "2914": {
-      "name": "日本たばこ産業",
-      "price": 7500,
-      "change": 2.25,
-      "volume": 6654400,
-      "sector": "Consumer Non-Durables",
-      "consecutive_days": 1,
-      "last_date": "2026-10-16"
-    },
-    "2612": {
-      "name": "かどや製油",
-      "price": 2897,
-      "change": 1.29,
-      "volume": 341800,
-      "sector": "Process Industries",
-      "consecutive_days": 1,
-      "last_date": "2026-10-16"
-    },
-    "9889": {
-      "name": "ＪＢＣＣホールディングス",
-      "price": 1980,
-      "change": 1.23,
-      "volume": 322400,
-      "sector": "Electronic Technology",
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
@@ -164,39 +344,21 @@
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
-    "9147": {
-      "name": "ＮＩＰＰＯＮ　ＥＸＰＲＥＳＳ　ホールディングス",
-      "price": 5900,
-      "change": 0.94,
-      "volume": 1163600,
-      "sector": "Transportation",
+    "7550": {
+      "name": "ゼンショーホールディングス",
+      "price": 12100,
+      "change": 1.0,
+      "volume": 94600,
+      "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
-    "3762": {
-      "name": "テクマトリックス",
-      "price": 3240,
-      "change": 0.78,
-      "volume": 659700,
-      "sector": "Technology Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-16"
-    },
-    "7552": {
-      "name": "ハピネット",
-      "price": 5530,
-      "change": 0.36,
-      "volume": 475900,
-      "sector": "Distribution Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-16"
-    },
-    "4212": {
-      "name": "積水樹脂",
-      "price": 3110,
-      "change": 0.16,
-      "volume": 94700,
-      "sector": "Electronic Technology",
+    "2384": {
+      "name": "ＳＢＳホールディングス",
+      "price": 5700,
+      "change": 0.35,
+      "volume": 28200,
+      "sector": "Commercial Services",
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
@@ -209,30 +371,21 @@
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
-    "8157": {
-      "name": "都築電気",
-      "price": 4400,
-      "change": 0,
-      "volume": 70600,
-      "sector": "Technology Services",
+    "8032": {
+      "name": "日本紙パルプ商事",
+      "price": 1282,
+      "change": -0.23,
+      "volume": 101300,
+      "sector": "Process Industries",
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
-    "5589": {
-      "name": "オートサーバー",
-      "price": 2946,
-      "change": -0.44,
-      "volume": 4900,
-      "sector": "Retail Trade",
-      "consecutive_days": 1,
-      "last_date": "2026-10-16"
-    },
-    "5133": {
-      "name": "テリロジーホールディングス",
-      "price": 420,
-      "change": -7.28,
-      "volume": 10426200,
-      "sector": "Electronic Technology",
+    "2914": {
+      "name": "日本たばこ産業",
+      "price": 7478,
+      "change": -0.29,
+      "volume": 1312800,
+      "sector": "Consumer Non-Durables",
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
@@ -242,15 +395,6 @@
       "change": 0.0,
       "volume": 100,
       "sector": "Commercial Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-16"
-    },
-    "648A": {
-      "name": "ルクレ",
-      "price": 2295,
-      "change": 0.0,
-      "volume": 8217100,
-      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-16"
     },
