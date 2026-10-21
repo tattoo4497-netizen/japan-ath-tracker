@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-21",
-  "last_updated_time": "14:21",
+  "last_updated_time": "15:23",
   "stocks": {
     "NAG:4361": {
       "name": "川口化学工業",
@@ -22,28 +22,28 @@
     },
     "446A": {
       "name": "ノースサンド",
-      "price": 2874,
-      "change": 5.51,
-      "volume": 888600,
+      "price": 2871,
+      "change": 5.4,
+      "volume": 1026600,
       "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
-    "2612": {
-      "name": "かどや製油",
-      "price": 2969,
-      "change": 4.54,
-      "volume": 376100,
-      "sector": "Process Industries",
+    "NAG:418A": {
+      "name": "ウリドキ",
+      "price": 1760,
+      "change": 4.82,
+      "volume": 14000,
+      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
-    "3087": {
-      "name": "ドトール・日レスホールディングス",
-      "price": 3495,
-      "change": 4.48,
-      "volume": 291800,
-      "sector": "Consumer Services",
+    "7811": {
+      "name": "中本パックス",
+      "price": 2589,
+      "change": 3.98,
+      "volume": 46000,
+      "sector": "Commercial Services",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
@@ -56,66 +56,66 @@
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
-    "7811": {
-      "name": "中本パックス",
-      "price": 2575,
-      "change": 3.41,
-      "volume": 40700,
-      "sector": "Commercial Services",
+    "2612": {
+      "name": "かどや製油",
+      "price": 2943,
+      "change": 3.63,
+      "volume": 402600,
+      "sector": "Process Industries",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
-    "6532": {
-      "name": "ベイカレント",
-      "price": 11150,
-      "change": 2.81,
-      "volume": 1372500,
-      "sector": "Commercial Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-21"
-    },
-    "NAG:418A": {
-      "name": "ウリドキ",
-      "price": 1725,
-      "change": 2.74,
-      "volume": 13700,
-      "sector": "Technology Services",
+    "3087": {
+      "name": "ドトール・日レスホールディングス",
+      "price": 3450,
+      "change": 3.14,
+      "volume": 323300,
+      "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
     "3001": {
       "name": "片倉工業",
-      "price": 3350,
-      "change": 2.6,
-      "volume": 18600,
+      "price": 3345,
+      "change": 2.45,
+      "volume": 22200,
       "sector": "Health Technology",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
     "3399": {
       "name": "丸千代山岡家",
-      "price": 5230,
-      "change": 2.15,
-      "volume": 273300,
+      "price": 5220,
+      "change": 1.95,
+      "volume": 296600,
       "sector": "Consumer Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-21"
-    },
-    "6098": {
-      "name": "リクルートホールディングス",
-      "price": 19090,
-      "change": 1.54,
-      "volume": 1880000,
-      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
     "9889": {
       "name": "ＪＢＣＣホールディングス",
-      "price": 2228,
-      "change": 1.46,
-      "volume": 436800,
+      "price": 2231,
+      "change": 1.59,
+      "volume": 466100,
       "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-21"
+    },
+    "6532": {
+      "name": "ベイカレント",
+      "price": 11015,
+      "change": 1.57,
+      "volume": 1591800,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-21"
+    },
+    "6098": {
+      "name": "リクルートホールディングス",
+      "price": 19010,
+      "change": 1.12,
+      "volume": 2133800,
+      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
@@ -139,37 +139,28 @@
     },
     "7832": {
       "name": "バンダイナムコホールディングス",
-      "price": 6440,
-      "change": 0.91,
-      "volume": 1375400,
+      "price": 6438,
+      "change": 0.88,
+      "volume": 1603700,
       "sector": "Consumer Durables",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
     "6457": {
       "name": "グローリー",
-      "price": 5151,
-      "change": 0.49,
-      "volume": 193000,
+      "price": 5168,
+      "change": 0.82,
+      "volume": 233900,
       "sector": "Electronic Technology",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
     "2003": {
       "name": "日東富士製粉",
-      "price": 1970,
-      "change": 0,
-      "volume": 18300,
+      "price": 1967,
+      "change": -0.15,
+      "volume": 23200,
       "sector": "Consumer Non-Durables",
-      "consecutive_days": 1,
-      "last_date": "2026-10-21"
-    },
-    "4665": {
-      "name": "ダスキン",
-      "price": 4789,
-      "change": -0.31,
-      "volume": 59700,
-      "sector": "Finance",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
@@ -177,44 +168,53 @@
       "name": "カワセコンピュータサプライ",
       "price": 212,
       "change": -0.47,
-      "volume": 43300,
+      "volume": 80100,
       "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-21"
+    },
+    "4665": {
+      "name": "ダスキン",
+      "price": 4776,
+      "change": -0.58,
+      "volume": 69400,
+      "sector": "Finance",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
     "3091": {
       "name": "ブロンコビリー",
-      "price": 2959,
-      "change": -0.74,
-      "volume": 128500,
+      "price": 2943,
+      "change": -1.27,
+      "volume": 148900,
       "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
     "8163": {
       "name": "サトレストランシステムズ",
-      "price": 1670,
-      "change": -0.83,
-      "volume": 231600,
+      "price": 1657,
+      "change": -1.6,
+      "volume": 266200,
       "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
     "3097": {
       "name": "物語コーポレーション",
-      "price": 5940,
-      "change": -2.46,
-      "volume": 177600,
+      "price": 5910,
+      "change": -2.96,
+      "volume": 208800,
       "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
-    "645A": {
-      "name": "Ｐ−デジタルベリー",
-      "price": 500,
+    "649A": {
+      "name": "Ｐ−Ｈ．Ｋ．Ｋ",
+      "price": 4200,
       "change": 0.0,
       "volume": 100,
-      "sector": "Commercial Services",
+      "sector": "Finance",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
@@ -227,12 +227,12 @@
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     },
-    "649A": {
-      "name": "Ｐ−Ｈ．Ｋ．Ｋ",
-      "price": 4200,
+    "645A": {
+      "name": "Ｐ−デジタルベリー",
+      "price": 500,
       "change": 0.0,
       "volume": 100,
-      "sector": "Finance",
+      "sector": "Commercial Services",
       "consecutive_days": 1,
       "last_date": "2026-10-21"
     }
