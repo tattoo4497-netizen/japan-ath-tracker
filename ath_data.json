@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-21",
-  "last_updated_time": "16:34",
+  "last_updated": "2026-10-22",
+  "last_updated_time": "09:17",
   "stocks": {
     "NAG:4361": {
       "name": "川口化学工業",
@@ -9,7 +9,7 @@
       "volume": 100,
       "sector": "Process Industries",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "FSE:6504": {
       "name": "富士電機",
@@ -18,7 +18,7 @@
       "volume": 100,
       "sector": "Producer Manufacturing",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "446A": {
       "name": "ノースサンド",
@@ -27,7 +27,7 @@
       "volume": 1171100,
       "sector": "Technology Services",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "6743": {
       "name": "大同信号",
@@ -36,7 +36,7 @@
       "volume": 24100,
       "sector": "Electronic Technology",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "NAG:8725": {
       "name": "ＭＳ＆ＡＤインシュアランスグループホールディングス",
@@ -45,7 +45,7 @@
       "volume": 100,
       "sector": "Finance",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "3087": {
       "name": "ドトール・日レスホールディングス",
@@ -54,7 +54,7 @@
       "volume": 447400,
       "sector": "Consumer Services",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "2612": {
       "name": "かどや製油",
@@ -63,7 +63,7 @@
       "volume": 426500,
       "sector": "Process Industries",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "7811": {
       "name": "中本パックス",
@@ -72,7 +72,7 @@
       "volume": 53700,
       "sector": "Commercial Services",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "NAG:418A": {
       "name": "ウリドキ",
@@ -81,7 +81,7 @@
       "volume": 14200,
       "sector": "Technology Services",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "3001": {
       "name": "片倉工業",
@@ -90,7 +90,7 @@
       "volume": 35500,
       "sector": "Health Technology",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "9889": {
       "name": "ＪＢＣＣホールディングス",
@@ -99,7 +99,7 @@
       "volume": 555700,
       "sector": "Electronic Technology",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "FSE:7851": {
       "name": "カワセコンピュータサプライ",
@@ -108,7 +108,7 @@
       "volume": 86500,
       "sector": "Consumer Services",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "6532": {
       "name": "ベイカレント",
@@ -117,7 +117,7 @@
       "volume": 1907200,
       "sector": "Commercial Services",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "3399": {
       "name": "丸千代山岡家",
@@ -126,7 +126,7 @@
       "volume": 345100,
       "sector": "Consumer Services",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "NAG:6136": {
       "name": "オーエスジー",
@@ -135,7 +135,7 @@
       "volume": 100,
       "sector": "Producer Manufacturing",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "NAG:4707": {
       "name": "キタック",
@@ -144,7 +144,7 @@
       "volume": 100,
       "sector": "Commercial Services",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "6457": {
       "name": "グローリー",
@@ -153,7 +153,7 @@
       "volume": 347900,
       "sector": "Electronic Technology",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "7832": {
       "name": "バンダイナムコホールディングス",
@@ -162,7 +162,7 @@
       "volume": 2625500,
       "sector": "Consumer Durables",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "6098": {
       "name": "リクルートホールディングス",
@@ -171,7 +171,7 @@
       "volume": 3373800,
       "sector": "Technology Services",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "2003": {
       "name": "日東富士製粉",
@@ -180,7 +180,7 @@
       "volume": 32800,
       "sector": "Consumer Non-Durables",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "4665": {
       "name": "ダスキン",
@@ -189,7 +189,7 @@
       "volume": 107000,
       "sector": "Finance",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "3091": {
       "name": "ブロンコビリー",
@@ -198,7 +198,7 @@
       "volume": 173700,
       "sector": "Consumer Services",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "8163": {
       "name": "サトレストランシステムズ",
@@ -207,7 +207,7 @@
       "volume": 300200,
       "sector": "Consumer Services",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "3097": {
       "name": "物語コーポレーション",
@@ -216,7 +216,7 @@
       "volume": 281200,
       "sector": "Consumer Services",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "647A": {
       "name": "Ｐ−東京みらい不動産",
@@ -225,16 +225,7 @@
       "volume": 100,
       "sector": "Finance",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
-    },
-    "645A": {
-      "name": "Ｐ−デジタルベリー",
-      "price": 500,
-      "change": 0.0,
-      "volume": 100,
-      "sector": "Commercial Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     },
     "649A": {
       "name": "Ｐ−Ｈ．Ｋ．Ｋ",
@@ -243,7 +234,7 @@
       "volume": 100,
       "sector": "Finance",
       "consecutive_days": 1,
-      "last_date": "2026-10-21"
+      "last_date": "2026-10-22"
     }
   }
 }
