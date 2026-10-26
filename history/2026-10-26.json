@@ -1,0 +1,168 @@
+{
+  "last_updated": "2026-10-26",
+  "last_updated_time": "09:20",
+  "stocks": {
+    "NAG:4616": {
+      "name": "川上塗料",
+      "price": 3825,
+      "change": 137.58,
+      "volume": 100,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "NAG:4361": {
+      "name": "川口化学工業",
+      "price": 1753,
+      "change": 37.27,
+      "volume": 100,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "FSE:6504": {
+      "name": "富士電機",
+      "price": 14200,
+      "change": 35.37,
+      "volume": 100,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "NAG:7282": {
+      "name": "豊田合成",
+      "price": 990,
+      "change": 15.74,
+      "volume": 200,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "9243": {
+      "name": "Ｐ−富士テクノＨＤ",
+      "price": 520,
+      "change": 8.33,
+      "volume": 500,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "3091": {
+      "name": "ブロンコビリー",
+      "price": 3130,
+      "change": 6.35,
+      "volume": 474700,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "3762": {
+      "name": "テクマトリックス",
+      "price": 3485,
+      "change": 2.5,
+      "volume": 540100,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "6432": {
+      "name": "竹内製作所",
+      "price": 8170,
+      "change": 2.25,
+      "volume": 29700,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "3001": {
+      "name": "片倉工業",
+      "price": 3555,
+      "change": 1.28,
+      "volume": 4400,
+      "sector": "Health Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "7459": {
+      "name": "メディパルホールディングス",
+      "price": 3206,
+      "change": 1.14,
+      "volume": 381900,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "NAG:6136": {
+      "name": "オーエスジー",
+      "price": 3758,
+      "change": 1.05,
+      "volume": 100,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "NAG:4707": {
+      "name": "キタック",
+      "price": 398,
+      "change": 1.02,
+      "volume": 100,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "2384": {
+      "name": "ＳＢＳホールディングス",
+      "price": 5980,
+      "change": 0.17,
+      "volume": 6500,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "271A": {
+      "name": "Ｐ−アクセリア",
+      "price": 1500,
+      "change": 0,
+      "volume": 300,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "8032": {
+      "name": "日本紙パルプ商事",
+      "price": 1351,
+      "change": -0.22,
+      "volume": 18400,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "4498": {
+      "name": "サイバートラスト",
+      "price": 2470,
+      "change": -3.52,
+      "volume": 15340000,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "647A": {
+      "name": "Ｐ−東京みらい不動産",
+      "price": 500,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    },
+    "649A": {
+      "name": "Ｐ−Ｈ．Ｋ．Ｋ",
+      "price": 4200,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-26"
+    }
+  }
+}
