@@ -1,0 +1,168 @@
+{
+  "last_updated": "2026-10-27",
+  "last_updated_time": "09:21",
+  "stocks": {
+    "NAG:4361": {
+      "name": "川口化学工業",
+      "price": 1753,
+      "change": 37.27,
+      "volume": 100,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "FSE:6504": {
+      "name": "富士電機",
+      "price": 14200,
+      "change": 35.37,
+      "volume": 100,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "3042": {
+      "name": "セキュアヴェイル",
+      "price": 1403,
+      "change": 27.2,
+      "volume": 13194300,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "NAG:7282": {
+      "name": "豊田合成",
+      "price": 990,
+      "change": 15.74,
+      "volume": 200,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "9243": {
+      "name": "Ｐ−富士テクノＨＤ",
+      "price": 520,
+      "change": 8.33,
+      "volume": 500,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "4684": {
+      "name": "オービック",
+      "price": 6050,
+      "change": 3.07,
+      "volume": 2225400,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "6743": {
+      "name": "大同信号",
+      "price": 1159,
+      "change": 2.02,
+      "volume": 3900,
+      "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "8159": {
+      "name": "立花エレテック",
+      "price": 5030,
+      "change": 1.51,
+      "volume": 9700,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "8070": {
+      "name": "東京産業",
+      "price": 1162,
+      "change": 1.48,
+      "volume": 37700,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "NAG:6136": {
+      "name": "オーエスジー",
+      "price": 3758,
+      "change": 1.05,
+      "volume": 100,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "NAG:4707": {
+      "name": "キタック",
+      "price": 398,
+      "change": 1.02,
+      "volume": 100,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "NAG:4616": {
+      "name": "川上塗料",
+      "price": 3855,
+      "change": 0.78,
+      "volume": 100,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "5195": {
+      "name": "バンドー化学",
+      "price": 2647,
+      "change": 0.76,
+      "volume": 5900,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "9621": {
+      "name": "建設技術研究所",
+      "price": 3590,
+      "change": 0.42,
+      "volume": 17300,
+      "sector": "Industrial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "2961": {
+      "name": "日本調理機",
+      "price": 1721,
+      "change": 0.12,
+      "volume": 26600,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "271A": {
+      "name": "Ｐ−アクセリア",
+      "price": 1500,
+      "change": 0,
+      "volume": 300,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "9632": {
+      "name": "スバル興業",
+      "price": 5500,
+      "change": -0.54,
+      "volume": 800,
+      "sector": "Transportation",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    },
+    "649A": {
+      "name": "Ｐ−Ｈ．Ｋ．Ｋ",
+      "price": 4200,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-27"
+    }
+  }
+}
