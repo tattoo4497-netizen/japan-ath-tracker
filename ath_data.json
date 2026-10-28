@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-28",
-  "last_updated_time": "12:31",
+  "last_updated_time": "13:31",
   "stocks": {
     "NAG:4361": {
       "name": "川口化学工業",
@@ -31,9 +31,9 @@
     },
     "4588": {
       "name": "オンコリスバイオファーマ",
-      "price": 7860,
-      "change": 12.61,
-      "volume": 1719500,
+      "price": 7910,
+      "change": 13.32,
+      "volume": 1985400,
       "sector": "Health Technology",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
@@ -47,15 +47,6 @@
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
-    "4417": {
-      "name": "グローバルセキュリティエキスパート",
-      "price": 8330,
-      "change": 4.65,
-      "volume": 236600,
-      "sector": "Technology Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-28"
-    },
     "NAG:8015": {
       "name": "豊田通商",
       "price": 7579,
@@ -65,48 +56,66 @@
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
+    "4417": {
+      "name": "グローバルセキュリティエキスパート",
+      "price": 8160,
+      "change": 2.51,
+      "volume": 259700,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-28"
+    },
+    "618A": {
+      "name": "ＫＯＭＰＥＩＴＯ",
+      "price": 2173,
+      "change": 1.83,
+      "volume": 259700,
+      "sector": "Transportation",
+      "consecutive_days": 1,
+      "last_date": "2026-10-28"
+    },
+    "446A": {
+      "name": "ノースサンド",
+      "price": 2905,
+      "change": 1.43,
+      "volume": 546800,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-28"
+    },
     "4619": {
       "name": "日本特殊塗料",
-      "price": 2734,
-      "change": 2.17,
-      "volume": 76100,
+      "price": 2714,
+      "change": 1.42,
+      "volume": 87100,
       "sector": "Producer Manufacturing",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
     "7504": {
       "name": "高速",
-      "price": 5440,
-      "change": 2.06,
-      "volume": 40000,
+      "price": 5400,
+      "change": 1.31,
+      "volume": 48900,
       "sector": "Process Industries",
-      "consecutive_days": 1,
-      "last_date": "2026-10-28"
-    },
-    "446A": {
-      "name": "ノースサンド",
-      "price": 2896,
-      "change": 1.12,
-      "volume": 463700,
-      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
     "7803": {
       "name": "ブシロード",
-      "price": 551,
-      "change": 1.1,
-      "volume": 1301100,
+      "price": 552,
+      "change": 1.28,
+      "volume": 1538700,
       "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
-    "2612": {
-      "name": "かどや製油",
-      "price": 2962,
-      "change": 1.09,
-      "volume": 157400,
-      "sector": "Process Industries",
+    "4684": {
+      "name": "オービック",
+      "price": 6003,
+      "change": 1.06,
+      "volume": 2222400,
+      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
@@ -116,6 +125,15 @@
       "change": 1.05,
       "volume": 100,
       "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-28"
+    },
+    "2612": {
+      "name": "かどや製油",
+      "price": 2960,
+      "change": 1.02,
+      "volume": 166800,
+      "sector": "Process Industries",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
@@ -130,19 +148,37 @@
     },
     "7678": {
       "name": "あさくま",
-      "price": 3970,
-      "change": 0.51,
-      "volume": 11100,
+      "price": 3975,
+      "change": 0.63,
+      "volume": 12800,
       "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-28"
+    },
+    "8032": {
+      "name": "日本紙パルプ商事",
+      "price": 1390,
+      "change": 0.14,
+      "volume": 143000,
+      "sector": "Process Industries",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
     "6743": {
       "name": "大同信号",
-      "price": 1218,
-      "change": 0.41,
-      "volume": 21000,
+      "price": 1214,
+      "change": 0.08,
+      "volume": 24800,
       "sector": "Electronic Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-28"
+    },
+    "8159": {
+      "name": "立花エレテック",
+      "price": 5030,
+      "change": 0,
+      "volume": 46300,
+      "sector": "Distribution Services",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
@@ -155,137 +191,110 @@
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
-    "4684": {
-      "name": "オービック",
-      "price": 5938,
-      "change": -0.03,
-      "volume": 1844100,
-      "sector": "Technology Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-28"
-    },
     "4633": {
       "name": "サカタインクス",
-      "price": 2713,
-      "change": -0.07,
-      "volume": 97100,
+      "price": 2714,
+      "change": -0.04,
+      "volume": 125600,
       "sector": "Process Industries",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
     "6724": {
       "name": "セイコーエプソン",
-      "price": 3432,
-      "change": -0.41,
-      "volume": 477000,
+      "price": 3442,
+      "change": -0.12,
+      "volume": 576200,
       "sector": "Electronic Technology",
-      "consecutive_days": 1,
-      "last_date": "2026-10-28"
-    },
-    "8032": {
-      "name": "日本紙パルプ商事",
-      "price": 1379,
-      "change": -0.65,
-      "volume": 111900,
-      "sector": "Process Industries",
-      "consecutive_days": 1,
-      "last_date": "2026-10-28"
-    },
-    "9621": {
-      "name": "建設技術研究所",
-      "price": 3575,
-      "change": -0.69,
-      "volume": 37900,
-      "sector": "Industrial Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-28"
-    },
-    "3107": {
-      "name": "ダイワボウホールディングス",
-      "price": 3834,
-      "change": -0.73,
-      "volume": 70800,
-      "sector": "Distribution Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-28"
-    },
-    "8084": {
-      "name": "ＲＹＯＤＥＮ",
-      "price": 2542,
-      "change": -0.94,
-      "volume": 23000,
-      "sector": "Distribution Services",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
     "9678": {
       "name": "カナモト",
-      "price": 5690,
-      "change": -1.04,
-      "volume": 130200,
+      "price": 5720,
+      "change": -0.52,
+      "volume": 149200,
       "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-10-28"
+    },
+    "3107": {
+      "name": "ダイワボウホールディングス",
+      "price": 3841,
+      "change": -0.54,
+      "volume": 94500,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-28"
+    },
+    "9621": {
+      "name": "建設技術研究所",
+      "price": 3580,
+      "change": -0.56,
+      "volume": 42300,
+      "sector": "Industrial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-28"
+    },
+    "8084": {
+      "name": "ＲＹＯＤＥＮ",
+      "price": 2543,
+      "change": -0.9,
+      "volume": 33400,
+      "sector": "Distribution Services",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
     "6454": {
       "name": "マックス",
-      "price": 1932,
-      "change": -1.33,
-      "volume": 81800,
+      "price": 1930,
+      "change": -1.43,
+      "volume": 102900,
       "sector": "Producer Manufacturing",
-      "consecutive_days": 1,
-      "last_date": "2026-10-28"
-    },
-    "618A": {
-      "name": "ＫＯＭＰＥＩＴＯ",
-      "price": 2104,
-      "change": -1.41,
-      "volume": 173800,
-      "sector": "Transportation",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
     "4258": {
       "name": "網屋",
-      "price": 6940,
-      "change": -1.7,
-      "volume": 607600,
+      "price": 6900,
+      "change": -2.27,
+      "volume": 671700,
       "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
     "3968": {
       "name": "セグエグループ",
-      "price": 858,
-      "change": -2.28,
-      "volume": 473600,
+      "price": 850,
+      "change": -3.19,
+      "volume": 560700,
       "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
     "3762": {
       "name": "テクマトリックス",
-      "price": 3615,
-      "change": -2.69,
-      "volume": 306800,
+      "price": 3565,
+      "change": -4.04,
+      "volume": 446800,
       "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
     "5599": {
       "name": "Ｓ＆Ｊ",
-      "price": 2199,
-      "change": -3.43,
-      "volume": 1866500,
+      "price": 2108,
+      "change": -7.42,
+      "volume": 2020500,
       "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
     },
     "3042": {
       "name": "セキュアヴェイル",
-      "price": 1477,
-      "change": -13.27,
-      "volume": 6821700,
+      "price": 1309,
+      "change": -23.14,
+      "volume": 7993800,
       "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-28"
