@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-30",
-  "last_updated_time": "10:47",
+  "last_updated_time": "11:35",
   "stocks": {
     "NAG:4361": {
       "name": "川口化学工業",
@@ -20,21 +20,21 @@
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
-    "9766": {
-      "name": "コナミグループ",
-      "price": 26825,
-      "change": 16.94,
-      "volume": 1141900,
-      "sector": "Technology Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-30"
-    },
     "NAG:7282": {
       "name": "豊田合成",
       "price": 990,
       "change": 15.74,
       "volume": 200,
       "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-10-30"
+    },
+    "9766": {
+      "name": "コナミグループ",
+      "price": 26450,
+      "change": 15.3,
+      "volume": 1341600,
+      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
@@ -47,66 +47,93 @@
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
-    "7550": {
-      "name": "ゼンショーホールディングス",
-      "price": 12580,
-      "change": 4.66,
-      "volume": 257800,
+    "2702": {
+      "name": "日本マクドナルドホールディングス",
+      "price": 8771,
+      "change": 6.44,
+      "volume": 1303600,
       "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
     "9658": {
       "name": "ビジネスブレイン太田昭和",
-      "price": 1288,
-      "change": 4.46,
-      "volume": 125900,
+      "price": 1310,
+      "change": 6.24,
+      "volume": 243000,
       "sector": "Commercial Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-30"
-    },
-    "7678": {
-      "name": "あさくま",
-      "price": 4135,
-      "change": 4.29,
-      "volume": 7100,
-      "sector": "Consumer Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-30"
-    },
-    "9861": {
-      "name": "吉野家ホールディングス",
-      "price": 4491,
-      "change": 4.22,
-      "volume": 268100,
-      "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
     "2705": {
       "name": "大戸屋ホールディングス",
-      "price": 10230,
-      "change": 4.18,
-      "volume": 30400,
+      "price": 10370,
+      "change": 5.6,
+      "volume": 37000,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-30"
+    },
+    "4588": {
+      "name": "オンコリスバイオファーマ",
+      "price": 7770,
+      "change": 5,
+      "volume": 1761000,
+      "sector": "Health Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-10-30"
+    },
+    "7550": {
+      "name": "ゼンショーホールディングス",
+      "price": 12595,
+      "change": 4.78,
+      "volume": 301700,
       "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
     "7552": {
       "name": "ハピネット",
-      "price": 6050,
-      "change": 3.77,
-      "volume": 226000,
+      "price": 6090,
+      "change": 4.46,
+      "volume": 257000,
       "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-30"
+    },
+    "9861": {
+      "name": "吉野家ホールディングス",
+      "price": 4485,
+      "change": 4.08,
+      "volume": 308300,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-30"
+    },
+    "7678": {
+      "name": "あさくま",
+      "price": 4120,
+      "change": 3.91,
+      "volume": 8200,
+      "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
     "7453": {
       "name": "良品計画",
-      "price": 4923,
-      "change": 3.19,
-      "volume": 1098900,
+      "price": 4938,
+      "change": 3.5,
+      "volume": 1306200,
       "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-10-30"
+    },
+    "9900": {
+      "name": "サガミホールディングス",
+      "price": 1231,
+      "change": 3.01,
+      "volume": 138100,
+      "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
@@ -119,57 +146,39 @@
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
-    "4588": {
-      "name": "オンコリスバイオファーマ",
-      "price": 7600,
-      "change": 2.7,
-      "volume": 1475600,
-      "sector": "Health Technology",
-      "consecutive_days": 1,
-      "last_date": "2026-10-30"
-    },
     "6532": {
       "name": "ベイカレント",
-      "price": 11880,
-      "change": 2.15,
-      "volume": 840300,
+      "price": 11875,
+      "change": 2.11,
+      "volume": 929500,
       "sector": "Commercial Services",
-      "consecutive_days": 1,
-      "last_date": "2026-10-30"
-    },
-    "9900": {
-      "name": "サガミホールディングス",
-      "price": 1218,
-      "change": 1.92,
-      "volume": 117500,
-      "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
     "8725": {
       "name": "ＭＳ＆ＡＤインシュアランスグループホールディングス",
-      "price": 5292,
-      "change": 1.71,
-      "volume": 1501200,
+      "price": 5299,
+      "change": 1.85,
+      "volume": 1816400,
       "sector": "Finance",
-      "consecutive_days": 1,
-      "last_date": "2026-10-30"
-    },
-    "4684": {
-      "name": "オービック",
-      "price": 6092,
-      "change": 1.53,
-      "volume": 827100,
-      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
     "7085": {
       "name": "カーブスＨＤ",
-      "price": 1063,
-      "change": 1.24,
-      "volume": 110400,
+      "price": 1064,
+      "change": 1.33,
+      "volume": 136100,
       "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-30"
+    },
+    "4684": {
+      "name": "オービック",
+      "price": 6079,
+      "change": 1.32,
+      "volume": 991400,
+      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
@@ -182,6 +191,24 @@
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
+    "8032": {
+      "name": "日本紙パルプ商事",
+      "price": 1403,
+      "change": 0.94,
+      "volume": 120900,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-10-30"
+    },
+    "2612": {
+      "name": "かどや製油",
+      "price": 3125,
+      "change": 0.81,
+      "volume": 54600,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-10-30"
+    },
     "NAG:4616": {
       "name": "川上塗料",
       "price": 3855,
@@ -191,29 +218,11 @@
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
-    "8032": {
-      "name": "日本紙パルプ商事",
-      "price": 1399,
-      "change": 0.65,
-      "volume": 93200,
-      "sector": "Process Industries",
-      "consecutive_days": 1,
-      "last_date": "2026-10-30"
-    },
-    "2612": {
-      "name": "かどや製油",
-      "price": 3120,
-      "change": 0.65,
-      "volume": 44800,
-      "sector": "Process Industries",
-      "consecutive_days": 1,
-      "last_date": "2026-10-30"
-    },
     "9632": {
       "name": "スバル興業",
-      "price": 5440,
-      "change": 0.37,
-      "volume": 7800,
+      "price": 5450,
+      "change": 0.55,
+      "volume": 8200,
       "sector": "Transportation",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
@@ -227,39 +236,48 @@
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
-    "3107": {
-      "name": "ダイワボウホールディングス",
-      "price": 3813,
-      "change": -0.52,
-      "volume": 61100,
-      "sector": "Distribution Services",
+    "9621": {
+      "name": "建設技術研究所",
+      "price": 3605,
+      "change": -0.41,
+      "volume": 30500,
+      "sector": "Industrial Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
-    "9621": {
-      "name": "建設技術研究所",
-      "price": 3595,
-      "change": -0.69,
-      "volume": 26200,
-      "sector": "Industrial Services",
+    "3107": {
+      "name": "ダイワボウホールディングス",
+      "price": 3817,
+      "change": -0.42,
+      "volume": 75800,
+      "sector": "Distribution Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
     "7970": {
       "name": "信越ポリマー",
-      "price": 2522,
-      "change": -1.29,
-      "volume": 177500,
+      "price": 2533,
+      "change": -0.86,
+      "volume": 204800,
       "sector": "Process Industries",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
     "9824": {
       "name": "泉州電業",
-      "price": 8250,
-      "change": -2.48,
-      "volume": 28000,
+      "price": 8310,
+      "change": -1.77,
+      "volume": 36600,
       "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-10-30"
+    },
+    "652A": {
+      "name": "Ｇ−トグルＨＤ",
+      "price": 3735,
+      "change": 0.0,
+      "volume": 1465600,
+      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     },
@@ -269,15 +287,6 @@
       "change": 0.0,
       "volume": 100,
       "sector": "Finance",
-      "consecutive_days": 1,
-      "last_date": "2026-10-30"
-    },
-    "652A": {
-      "name": "Ｇ−トグルＨＤ",
-      "price": 3745,
-      "change": 0.0,
-      "volume": 1358100,
-      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-10-30"
     }
