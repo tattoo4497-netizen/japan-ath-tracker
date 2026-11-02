@@ -1,0 +1,123 @@
+{
+  "last_updated": "2026-11-02",
+  "last_updated_time": "09:34",
+  "stocks": {
+    "NAG:7282": {
+      "name": "豊田合成",
+      "price": 990,
+      "change": 15.74,
+      "volume": 200,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    },
+    "9243": {
+      "name": "Ｐ−富士テクノＨＤ",
+      "price": 520,
+      "change": 8.33,
+      "volume": 500,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    },
+    "9658": {
+      "name": "ビジネスブレイン太田昭和",
+      "price": 1371,
+      "change": 4.34,
+      "volume": 337300,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    },
+    "NAG:8015": {
+      "name": "豊田通商",
+      "price": 7579,
+      "change": 3.0,
+      "volume": 100,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    },
+    "2702": {
+      "name": "日本マクドナルドホールディングス",
+      "price": 8788,
+      "change": 1.13,
+      "volume": 223000,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    },
+    "NAG:4616": {
+      "name": "川上塗料",
+      "price": 3855,
+      "change": 0.78,
+      "volume": 100,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    },
+    "271A": {
+      "name": "Ｐ−アクセリア",
+      "price": 1500,
+      "change": 0,
+      "volume": 300,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    },
+    "7459": {
+      "name": "メディパルホールディングス",
+      "price": 3439,
+      "change": -0.06,
+      "volume": 42200,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    },
+    "9861": {
+      "name": "吉野家ホールディングス",
+      "price": 4499,
+      "change": -0.16,
+      "volume": 95600,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    },
+    "9069": {
+      "name": "センコー",
+      "price": 2415.5,
+      "change": -0.51,
+      "volume": 49300,
+      "sector": "Transportation",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    },
+    "4684": {
+      "name": "オービック",
+      "price": 6083,
+      "change": -0.75,
+      "volume": 374300,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    },
+    "7678": {
+      "name": "あさくま",
+      "price": 4075,
+      "change": -1.33,
+      "volume": 6000,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    },
+    "FSE:4059": {
+      "name": "まぐまぐ",
+      "price": 253,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-02"
+    }
+  }
+}
