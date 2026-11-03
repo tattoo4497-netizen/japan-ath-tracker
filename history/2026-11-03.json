@@ -1,0 +1,177 @@
+{
+  "last_updated": "2026-11-03",
+  "last_updated_time": "13:57",
+  "stocks": {
+    "7537": {
+      "name": "丸文",
+      "price": 2180,
+      "change": 22.47,
+      "volume": 594400,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "NAG:7282": {
+      "name": "豊田合成",
+      "price": 990,
+      "change": 15.74,
+      "volume": 200,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "9658": {
+      "name": "ビジネスブレイン太田昭和",
+      "price": 1506,
+      "change": 14.61,
+      "volume": 1736000,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "2531": {
+      "name": "宝ホールディングス",
+      "price": 3129,
+      "change": 11.27,
+      "volume": 1682100,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "9243": {
+      "name": "Ｐ−富士テクノＨＤ",
+      "price": 520,
+      "change": 8.33,
+      "volume": 500,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "4588": {
+      "name": "オンコリスバイオファーマ",
+      "price": 7910,
+      "change": 4.63,
+      "volume": 2015800,
+      "sector": "Health Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "NAG:8015": {
+      "name": "豊田通商",
+      "price": 7579,
+      "change": 3.0,
+      "volume": 100,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "9900": {
+      "name": "サガミホールディングス",
+      "price": 1249,
+      "change": 1.79,
+      "volume": 243500,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "NAG:4616": {
+      "name": "川上塗料",
+      "price": 3855,
+      "change": 0.78,
+      "volume": 100,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "9861": {
+      "name": "吉野家ホールディングス",
+      "price": 4540,
+      "change": 0.75,
+      "volume": 480400,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "8255": {
+      "name": "アクシアル　リテイリング",
+      "price": 1352,
+      "change": 0.45,
+      "volume": 166700,
+      "sector": "Retail Trade",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "2702": {
+      "name": "日本マクドナルドホールディングス",
+      "price": 8710,
+      "change": 0.23,
+      "volume": 1247400,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "271A": {
+      "name": "Ｐ−アクセリア",
+      "price": 1500,
+      "change": 0,
+      "volume": 300,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "9069": {
+      "name": "センコー",
+      "price": 2411,
+      "change": -0.7,
+      "volume": 462500,
+      "sector": "Transportation",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "7678": {
+      "name": "あさくま",
+      "price": 4100,
+      "change": -0.73,
+      "volume": 12900,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "4684": {
+      "name": "オービック",
+      "price": 6059,
+      "change": -1.14,
+      "volume": 2058700,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "7459": {
+      "name": "メディパルホールディングス",
+      "price": 3384,
+      "change": -1.66,
+      "volume": 380900,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "FSE:4059": {
+      "name": "まぐまぐ",
+      "price": 245,
+      "change": 0.0,
+      "volume": 200,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    },
+    "653A": {
+      "name": "ＭＡＢＧＥＮＥＳＩＳ",
+      "price": 696,
+      "change": 0.0,
+      "volume": 1632400,
+      "sector": "Health Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-11-03"
+    }
+  }
+}
