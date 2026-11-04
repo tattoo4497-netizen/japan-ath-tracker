@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "last_updated_time": "13:28",
+  "last_updated_time": "21:43",
   "stocks": {
     "SAPSE:4502": {
       "name": "武田薬品工業",
@@ -31,19 +31,37 @@
     },
     "8255": {
       "name": "アクシアル　リテイリング",
-      "price": 1436,
-      "change": 6.21,
-      "volume": 250000,
+      "price": 1445,
+      "change": 6.88,
+      "volume": 485700,
       "sector": "Retail Trade",
       "consecutive_days": 1,
       "last_date": "2026-11-04"
     },
     "3399": {
       "name": "丸千代山岡家",
-      "price": 5470,
-      "change": 4.39,
-      "volume": 173700,
+      "price": 5590,
+      "change": 6.68,
+      "volume": 264600,
       "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-04"
+    },
+    "2531": {
+      "name": "宝ホールディングス",
+      "price": 3310,
+      "change": 5.78,
+      "volume": 1542300,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-04"
+    },
+    "4588": {
+      "name": "オンコリスバイオファーマ",
+      "price": 8300,
+      "change": 4.93,
+      "volume": 2170800,
+      "sector": "Health Technology",
       "consecutive_days": 1,
       "last_date": "2026-11-04"
     },
@@ -56,24 +74,6 @@
       "consecutive_days": 1,
       "last_date": "2026-11-04"
     },
-    "2531": {
-      "name": "宝ホールディングス",
-      "price": 3233,
-      "change": 3.32,
-      "volume": 886300,
-      "sector": "Consumer Non-Durables",
-      "consecutive_days": 1,
-      "last_date": "2026-11-04"
-    },
-    "9900": {
-      "name": "サガミホールディングス",
-      "price": 1288,
-      "change": 3.12,
-      "volume": 211500,
-      "sector": "Consumer Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-04"
-    },
     "NAG:8015": {
       "name": "豊田通商",
       "price": 7579,
@@ -83,20 +83,38 @@
       "consecutive_days": 1,
       "last_date": "2026-11-04"
     },
+    "2612": {
+      "name": "かどや製油",
+      "price": 3125,
+      "change": 1.79,
+      "volume": 128200,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-04"
+    },
     "7678": {
       "name": "あさくま",
-      "price": 4175,
-      "change": 1.83,
-      "volume": 5300,
+      "price": 4170,
+      "change": 1.71,
+      "volume": 11300,
       "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-11-04"
     },
-    "3087": {
-      "name": "ドトール・日レスホールディングス",
-      "price": 3650,
-      "change": 1.39,
-      "volume": 97000,
+    "9861": {
+      "name": "吉野家ホールディングス",
+      "price": 4592,
+      "change": 1.15,
+      "volume": 568500,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-04"
+    },
+    "9900": {
+      "name": "サガミホールディングス",
+      "price": 1260,
+      "change": 0.88,
+      "volume": 337800,
       "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-11-04"
@@ -110,30 +128,21 @@
       "consecutive_days": 1,
       "last_date": "2026-11-04"
     },
-    "9861": {
-      "name": "吉野家ホールディングス",
-      "price": 4573,
-      "change": 0.73,
-      "volume": 271100,
+    "3087": {
+      "name": "ドトール・日レスホールディングス",
+      "price": 3620,
+      "change": 0.56,
+      "volume": 199900,
       "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-11-04"
     },
     "4526": {
       "name": "理研ビタミン",
-      "price": 3455,
-      "change": 0.44,
-      "volume": 43500,
+      "price": 3450,
+      "change": 0.29,
+      "volume": 92100,
       "sector": "Consumer Non-Durables",
-      "consecutive_days": 1,
-      "last_date": "2026-11-04"
-    },
-    "4588": {
-      "name": "オンコリスバイオファーマ",
-      "price": 7940,
-      "change": 0.38,
-      "volume": 1258200,
-      "sector": "Health Technology",
       "consecutive_days": 1,
       "last_date": "2026-11-04"
     },
@@ -148,18 +157,18 @@
     },
     "7537": {
       "name": "丸文",
-      "price": 2023,
-      "change": -7.2,
-      "volume": 830400,
+      "price": 2087,
+      "change": -4.27,
+      "volume": 1035900,
       "sector": "Distribution Services",
       "consecutive_days": 1,
       "last_date": "2026-11-04"
     },
     "656A": {
       "name": "Ｇ−オルガナイズ",
-      "price": 1199,
+      "price": 1250,
       "change": 0.0,
-      "volume": 3833600,
+      "volume": 4775700,
       "sector": "その他",
       "consecutive_days": 1,
       "last_date": "2026-11-04"
