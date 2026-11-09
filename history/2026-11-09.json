@@ -1,0 +1,132 @@
+{
+  "last_updated": "2026-11-09",
+  "last_updated_time": "13:09",
+  "stocks": {
+    "NAG:3974": {
+      "name": "ＳＣＡＴ",
+      "price": 715,
+      "change": 65.93,
+      "volume": 100,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "SAPSE:4502": {
+      "name": "武田薬品工業",
+      "price": 6570,
+      "change": 23.26,
+      "volume": 100,
+      "sector": "Health Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "658A": {
+      "name": "ＥＳＴＩＥ",
+      "price": 1004,
+      "change": 8.54,
+      "volume": 705200,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "6532": {
+      "name": "ベイカレント",
+      "price": 12590,
+      "change": 7.29,
+      "volume": 1030500,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "8158": {
+      "name": "ソーダニッカ",
+      "price": 1454,
+      "change": 6.99,
+      "volume": 100900,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "3549": {
+      "name": "クスリのアオキホールディングス",
+      "price": 5043,
+      "change": 6.17,
+      "volume": 91300,
+      "sector": "Retail Trade",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "7228": {
+      "name": "デイトナ",
+      "price": 4350,
+      "change": 5.33,
+      "volume": 17700,
+      "sector": "Consumer Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "3774": {
+      "name": "インターネットイニシアティブ",
+      "price": 3795,
+      "change": 5.21,
+      "volume": 544300,
+      "sector": "Communications",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "4526": {
+      "name": "理研ビタミン",
+      "price": 3715,
+      "change": 4.21,
+      "volume": 53600,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "4684": {
+      "name": "オービック",
+      "price": 6324,
+      "change": 4.2,
+      "volume": 741600,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "NAG:8015": {
+      "name": "豊田通商",
+      "price": 7579,
+      "change": 3.0,
+      "volume": 100,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "9702": {
+      "name": "アイ・エス・ビー",
+      "price": 2588,
+      "change": 2.86,
+      "volume": 16000,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "2612": {
+      "name": "かどや製油",
+      "price": 3170,
+      "change": 2.42,
+      "volume": 130000,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    },
+    "NAG:4616": {
+      "name": "川上塗料",
+      "price": 3855,
+      "change": 0.78,
+      "volume": 100,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-09"
+    }
+  }
+}
