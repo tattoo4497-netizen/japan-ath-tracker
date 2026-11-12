@@ -1,0 +1,213 @@
+{
+  "last_updated": "2026-11-12",
+  "last_updated_time": "14:24",
+  "stocks": {
+    "NAG:3974": {
+      "name": "ＳＣＡＴ",
+      "price": 715,
+      "change": 65.93,
+      "volume": 100,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "SAPSE:4502": {
+      "name": "武田薬品工業",
+      "price": 6570,
+      "change": 23.26,
+      "volume": 100,
+      "sector": "Health Technology",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "NAG:8601": {
+      "name": "大和証券グループ本社",
+      "price": 1784,
+      "change": 21.03,
+      "volume": 100,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "660A": {
+      "name": "ＲＥＣＥＰＴＩＯＮＩＳＴ",
+      "price": 1020,
+      "change": 17.24,
+      "volume": 1860500,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "3107": {
+      "name": "ダイワボウホールディングス",
+      "price": 3827,
+      "change": 14.38,
+      "volume": 975500,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "2820": {
+      "name": "やまみ",
+      "price": 7740,
+      "change": 14.33,
+      "volume": 167300,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "6794": {
+      "name": "フォスター電機",
+      "price": 4340,
+      "change": 10.86,
+      "volume": 1166100,
+      "sector": "Consumer Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "1762": {
+      "name": "高松コンストラクショングループ",
+      "price": 4485,
+      "change": 9.26,
+      "volume": 145100,
+      "sector": "Consumer Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "5845": {
+      "name": "全保連",
+      "price": 1255,
+      "change": 4.93,
+      "volume": 103100,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "6351": {
+      "name": "鶴見製作所",
+      "price": 2736,
+      "change": 3.56,
+      "volume": 49500,
+      "sector": "Producer Manufacturing",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "3569": {
+      "name": "セーレン",
+      "price": 3630,
+      "change": 3.27,
+      "volume": 329600,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "2003": {
+      "name": "日東富士製粉",
+      "price": 2092,
+      "change": 2.05,
+      "volume": 14900,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "3399": {
+      "name": "丸千代山岡家",
+      "price": 5910,
+      "change": 1.9,
+      "volume": 300800,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "8001": {
+      "name": "伊藤忠商事",
+      "price": 2407.5,
+      "change": 1.39,
+      "volume": 12064900,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "9658": {
+      "name": "ビジネスブレイン太田昭和",
+      "price": 1590,
+      "change": 1.21,
+      "volume": 164600,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "1939": {
+      "name": "四電工",
+      "price": 2465,
+      "change": 0.74,
+      "volume": 66800,
+      "sector": "Industrial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "3087": {
+      "name": "ドトール・日レスホールディングス",
+      "price": 3890,
+      "change": 0.39,
+      "volume": 91100,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "4956": {
+      "name": "コニシ",
+      "price": 1636,
+      "change": 0.06,
+      "volume": 72300,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "4972": {
+      "name": "綜研化学",
+      "price": 4615,
+      "change": 0,
+      "volume": 28400,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "4635": {
+      "name": "東京インキ",
+      "price": 2464,
+      "change": -0.77,
+      "volume": 61300,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "9632": {
+      "name": "スバル興業",
+      "price": 5600,
+      "change": -1.06,
+      "volume": 11400,
+      "sector": "Transportation",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "7552": {
+      "name": "ハピネット",
+      "price": 6420,
+      "change": -1.98,
+      "volume": 185000,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    },
+    "663A": {
+      "name": "Ｐ−アイグローブ",
+      "price": 2630,
+      "change": 0.0,
+      "volume": 100,
+      "sector": "Communications",
+      "consecutive_days": 1,
+      "last_date": "2026-11-12"
+    }
+  }
+}
