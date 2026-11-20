@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-20",
-  "last_updated_time": "14:21",
+  "last_updated_time": "23:46",
   "stocks": {
     "NAG:1438": {
       "name": "岐阜造園",
@@ -22,9 +22,9 @@
     },
     "652A": {
       "name": "トグルホールディングス",
-      "price": 4100,
-      "change": 6.36,
-      "volume": 211500,
+      "price": 4015,
+      "change": 4.15,
+      "volume": 289600,
       "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-11-20"
@@ -40,46 +40,28 @@
     },
     "2212": {
       "name": "山崎製パン",
-      "price": 4360,
-      "change": 2.66,
-      "volume": 677300,
+      "price": 4322,
+      "change": 1.77,
+      "volume": 1106700,
       "sector": "Consumer Non-Durables",
-      "consecutive_days": 1,
-      "last_date": "2026-11-20"
-    },
-    "NAG:418A": {
-      "name": "ウリドキ",
-      "price": 2074,
-      "change": 1.67,
-      "volume": 4300,
-      "sector": "Technology Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-20"
-    },
-    "7747": {
-      "name": "朝日インテック",
-      "price": 4358,
-      "change": 0.76,
-      "volume": 1566800,
-      "sector": "Health Technology",
       "consecutive_days": 1,
       "last_date": "2026-11-20"
     },
     "2810": {
       "name": "ハウス食品グループ本社",
-      "price": 4848,
-      "change": 0.5,
-      "volume": 167800,
+      "price": 4854,
+      "change": 0.62,
+      "volume": 344800,
       "sector": "Consumer Non-Durables",
       "consecutive_days": 1,
       "last_date": "2026-11-20"
     },
-    "6062": {
-      "name": "チャーム・ケア・コーポレーション",
-      "price": 1965,
-      "change": 0.05,
-      "volume": 502800,
-      "sector": "Health Services",
+    "7747": {
+      "name": "朝日インテック",
+      "price": 4348,
+      "change": 0.53,
+      "volume": 2511100,
+      "sector": "Health Technology",
       "consecutive_days": 1,
       "last_date": "2026-11-20"
     },
@@ -87,35 +69,35 @@
       "name": "岐阜造園",
       "price": 2758,
       "change": 0,
-      "volume": 9400,
+      "volume": 10900,
       "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-20"
+    },
+    "6062": {
+      "name": "チャーム・ケア・コーポレーション",
+      "price": 1964,
+      "change": 0,
+      "volume": 587500,
+      "sector": "Health Services",
       "consecutive_days": 1,
       "last_date": "2026-11-20"
     },
     "4503": {
       "name": "アステラス製薬",
-      "price": 2769,
-      "change": -0.02,
-      "volume": 4290500,
+      "price": 2751.5,
+      "change": -0.65,
+      "volume": 8080300,
       "sector": "Health Technology",
       "consecutive_days": 1,
       "last_date": "2026-11-20"
     },
-    "NAG:5530": {
-      "name": "日本システムバンク",
-      "price": 1149,
-      "change": -2.63,
-      "volume": 2000,
-      "sector": "Producer Manufacturing",
-      "consecutive_days": 1,
-      "last_date": "2026-11-20"
-    },
-    "657A": {
-      "name": "Ｇ−ＨＩＪＯＪＯ",
-      "price": 491,
-      "change": 0.0,
-      "volume": 5999500,
-      "sector": "Finance",
+    "NAG:418A": {
+      "name": "ウリドキ",
+      "price": 2001,
+      "change": -1.91,
+      "volume": 8200,
+      "sector": "Technology Services",
       "consecutive_days": 1,
       "last_date": "2026-11-20"
     },
@@ -125,6 +107,15 @@
       "change": 0.0,
       "volume": 100,
       "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-20"
+    },
+    "657A": {
+      "name": "Ｇ−ＨＩＪＯＪＯ",
+      "price": 469,
+      "change": 0.0,
+      "volume": 7263300,
+      "sector": "Finance",
       "consecutive_days": 1,
       "last_date": "2026-11-20"
     }
