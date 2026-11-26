@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-26",
-  "last_updated_time": "02:44",
+  "last_updated_time": "15:26",
   "stocks": {
     "NAG:1438": {
       "name": "岐阜造園",
@@ -11,282 +11,147 @@
       "consecutive_days": 1,
       "last_date": "2026-11-26"
     },
-    "4503": {
-      "name": "アステラス製薬",
-      "price": 2945,
-      "change": 6.49,
-      "volume": 8222500,
-      "sector": "Health Technology",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "4307": {
-      "name": "野村総合研究所",
-      "price": 6532,
-      "change": 6.47,
-      "volume": 4043000,
+    "558A": {
+      "name": "ＳＱＵＥＥＺＥ",
+      "price": 6900,
+      "change": 11.83,
+      "volume": 30800,
       "sector": "Technology Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "4578": {
-      "name": "大塚ホールディングス",
-      "price": 13130,
-      "change": 6.36,
-      "volume": 1465800,
-      "sector": "Health Technology",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "2212": {
-      "name": "山崎製パン",
-      "price": 4528,
-      "change": 5.97,
-      "volume": 709200,
-      "sector": "Consumer Non-Durables",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "7832": {
-      "name": "バンダイナムコホールディングス",
-      "price": 7410,
-      "change": 5.54,
-      "volume": 3362900,
-      "sector": "Consumer Durables",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "8179": {
-      "name": "ロイヤルホールディングス",
-      "price": 1736,
-      "change": 5.4,
-      "volume": 532200,
-      "sector": "Consumer Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "8725": {
-      "name": "ＭＳ＆ＡＤインシュアランスグループホールディングス",
-      "price": 5463,
-      "change": 5.0,
-      "volume": 5930100,
-      "sector": "Finance",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "8153": {
-      "name": "モスフードサービス",
-      "price": 5040,
-      "change": 4.78,
-      "volume": 151700,
-      "sector": "Consumer Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "3708": {
-      "name": "特種東海製紙",
-      "price": 2260,
-      "change": 4.68,
-      "volume": 93200,
-      "sector": "Process Industries",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "9347": {
-      "name": "日本管財ホールディングス",
-      "price": 3250,
-      "change": 4.33,
-      "volume": 53000,
-      "sector": "Finance",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "9766": {
-      "name": "コナミグループ",
-      "price": 31080,
-      "change": 4.14,
-      "volume": 593200,
-      "sector": "Technology Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "9735": {
-      "name": "セコム",
-      "price": 7596,
-      "change": 3.96,
-      "volume": 2090400,
-      "sector": "Commercial Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "2001": {
-      "name": "ニップン",
-      "price": 3105,
-      "change": 3.95,
-      "volume": 279300,
-      "sector": "Consumer Non-Durables",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "2810": {
-      "name": "ハウス食品グループ本社",
-      "price": 5082,
-      "change": 3.8,
-      "volume": 410800,
-      "sector": "Consumer Non-Durables",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "3197": {
-      "name": "すかいらーくホールディングス",
-      "price": 3871,
-      "change": 3.48,
-      "volume": 1360500,
-      "sector": "Consumer Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "9861": {
-      "name": "吉野家ホールディングス",
-      "price": 5084,
-      "change": 3.29,
-      "volume": 452700,
-      "sector": "Consumer Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "2702": {
-      "name": "日本マクドナルドホールディングス",
-      "price": 10260,
-      "change": 3.22,
-      "volume": 986500,
-      "sector": "Consumer Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "3950": {
-      "name": "ザ・パック",
-      "price": 1600,
-      "change": 3.16,
-      "volume": 80500,
-      "sector": "Process Industries",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "2809": {
-      "name": "キユーピー",
-      "price": 4972,
-      "change": 3.11,
-      "volume": 545800,
-      "sector": "Consumer Non-Durables",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "7550": {
-      "name": "ゼンショーホールディングス",
-      "price": 13965,
-      "change": 3.02,
-      "volume": 536400,
-      "sector": "Consumer Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "6457": {
-      "name": "グローリー",
-      "price": 5296,
-      "change": 2.95,
-      "volume": 246400,
-      "sector": "Electronic Technology",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "4684": {
-      "name": "オービック",
-      "price": 6404,
-      "change": 2.63,
-      "volume": 1859800,
-      "sector": "Technology Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "2331": {
-      "name": "ＡＬＳＯＫ",
-      "price": 1426.5,
-      "change": 2.48,
-      "volume": 2393400,
-      "sector": "Commercial Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "7747": {
-      "name": "朝日インテック",
-      "price": 4439,
-      "change": 2.23,
-      "volume": 2337800,
-      "sector": "Health Technology",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "3087": {
-      "name": "ドトール・日レスホールディングス",
-      "price": 4130,
-      "change": 2.1,
-      "volume": 151200,
-      "sector": "Consumer Services",
-      "consecutive_days": 1,
-      "last_date": "2026-11-26"
-    },
-    "2612": {
-      "name": "かどや製油",
-      "price": 3150,
-      "change": 1.94,
-      "volume": 314300,
-      "sector": "Process Industries",
       "consecutive_days": 1,
       "last_date": "2026-11-26"
     },
     "4972": {
       "name": "綜研化学",
-      "price": 5400,
-      "change": 0.37,
-      "volume": 63100,
+      "price": 5660,
+      "change": 4.81,
+      "volume": 60000,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "2612": {
+      "name": "かどや製油",
+      "price": 3280,
+      "change": 4.13,
+      "volume": 65200,
       "sector": "Process Industries",
       "consecutive_days": 1,
       "last_date": "2026-11-26"
     },
     "6532": {
       "name": "ベイカレント",
-      "price": 13315,
-      "change": 0.15,
-      "volume": 2008900,
+      "price": 13810,
+      "change": 3.72,
+      "volume": 1144800,
       "sector": "Commercial Services",
       "consecutive_days": 1,
       "last_date": "2026-11-26"
     },
-    "6062": {
-      "name": "チャーム・ケア・コーポレーション",
-      "price": 1966,
-      "change": 0.1,
-      "volume": 557900,
-      "sector": "Health Services",
+    "6457": {
+      "name": "グローリー",
+      "price": 5404,
+      "change": 2.04,
+      "volume": 110400,
+      "sector": "Electronic Technology",
       "consecutive_days": 1,
       "last_date": "2026-11-26"
     },
-    "1438": {
-      "name": "岐阜造園",
-      "price": 2758,
-      "change": 0,
-      "volume": 43200,
+    "8060": {
+      "name": "キヤノンマーケティングジャパン",
+      "price": 4205,
+      "change": 1.79,
+      "volume": 278400,
+      "sector": "Distribution Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "9616": {
+      "name": "共立メンテナンス",
+      "price": 4015,
+      "change": 1.47,
+      "volume": 638600,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "4635": {
+      "name": "東京インキ",
+      "price": 2483,
+      "change": 1.43,
+      "volume": 63400,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "4307": {
+      "name": "野村総合研究所",
+      "price": 6611,
+      "change": 1.21,
+      "volume": 2219600,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "3708": {
+      "name": "特種東海製紙",
+      "price": 2286,
+      "change": 1.15,
+      "volume": 49200,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "2331": {
+      "name": "ＡＬＳＯＫ",
+      "price": 1436.5,
+      "change": 0.7,
+      "volume": 1659800,
       "sector": "Commercial Services",
       "consecutive_days": 1,
       "last_date": "2026-11-26"
     },
-    "FSE:4059": {
-      "name": "まぐまぐ",
-      "price": 268,
+    "3950": {
+      "name": "ザ・パック",
+      "price": 1609,
+      "change": 0.56,
+      "volume": 37500,
+      "sector": "Process Industries",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "4684": {
+      "name": "オービック",
+      "price": 6432,
+      "change": 0.44,
+      "volume": 636500,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "9766": {
+      "name": "コナミグループ",
+      "price": 31210,
+      "change": 0.42,
+      "volume": 341900,
+      "sector": "Technology Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "7832": {
+      "name": "バンダイナムコホールディングス",
+      "price": 7432,
+      "change": 0.3,
+      "volume": 1924900,
+      "sector": "Consumer Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "7680": {
+      "name": "軽自動車館",
+      "price": 3190,
       "change": 0,
       "volume": 200,
-      "sector": "Technology Services",
+      "sector": "Retail Trade",
       "consecutive_days": 1,
       "last_date": "2026-11-26"
     },
@@ -299,12 +164,138 @@
       "consecutive_days": 1,
       "last_date": "2026-11-26"
     },
-    "664A": {
-      "name": "Ｇ−ＴＯＫＩＵＭ",
-      "price": 1215,
-      "change": 0.0,
-      "volume": 1243300,
-      "sector": "Technology Services",
+    "6062": {
+      "name": "チャーム・ケア・コーポレーション",
+      "price": 1965,
+      "change": -0.05,
+      "volume": 310700,
+      "sector": "Health Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "9735": {
+      "name": "セコム",
+      "price": 7590,
+      "change": -0.08,
+      "volume": 825800,
+      "sector": "Commercial Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "2810": {
+      "name": "ハウス食品グループ本社",
+      "price": 5064,
+      "change": -0.35,
+      "volume": 159300,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "2809": {
+      "name": "キユーピー",
+      "price": 4951,
+      "change": -0.42,
+      "volume": 941500,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "2212": {
+      "name": "山崎製パン",
+      "price": 4508,
+      "change": -0.44,
+      "volume": 451500,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "9632": {
+      "name": "スバル興業",
+      "price": 5630,
+      "change": -0.71,
+      "volume": 15000,
+      "sector": "Transportation",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "2503": {
+      "name": "キリンホールディングス",
+      "price": 3177,
+      "change": -0.84,
+      "volume": 1344500,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "7550": {
+      "name": "ゼンショーホールディングス",
+      "price": 13815,
+      "change": -1.07,
+      "volume": 269400,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "9347": {
+      "name": "日本管財ホールディングス",
+      "price": 3215,
+      "change": -1.08,
+      "volume": 26000,
+      "sector": "Finance",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "9861": {
+      "name": "吉野家ホールディングス",
+      "price": 5024,
+      "change": -1.18,
+      "volume": 327100,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "2702": {
+      "name": "日本マクドナルドホールディングス",
+      "price": 10105,
+      "change": -1.51,
+      "volume": 1002600,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "2001": {
+      "name": "ニップン",
+      "price": 3035,
+      "change": -2.25,
+      "volume": 102300,
+      "sector": "Consumer Non-Durables",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "3197": {
+      "name": "すかいらーくホールディングス",
+      "price": 3777,
+      "change": -2.43,
+      "volume": 888700,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "8179": {
+      "name": "ロイヤルホールディングス",
+      "price": 1688,
+      "change": -2.76,
+      "volume": 337800,
+      "sector": "Consumer Services",
+      "consecutive_days": 1,
+      "last_date": "2026-11-26"
+    },
+    "8153": {
+      "name": "モスフードサービス",
+      "price": 4890,
+      "change": -2.98,
+      "volume": 128500,
+      "sector": "Consumer Services",
       "consecutive_days": 1,
       "last_date": "2026-11-26"
     }
